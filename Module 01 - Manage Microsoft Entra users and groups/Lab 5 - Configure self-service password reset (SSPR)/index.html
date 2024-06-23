@@ -427,21 +427,6 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Task 1: Configure Pilot SSPR">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-group-pilot-sspr" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. เลือก group ที่จะ pilot SSPR ก่อน
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
       
         <li class="md-nav__item">
@@ -928,21 +913,6 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Task 1: Configure Pilot SSPR">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-group-pilot-sspr" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. เลือก group ที่จะ pilot SSPR ก่อน
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
       
         <li class="md-nav__item">
@@ -999,17 +969,23 @@
 <h1 id="lab-5-configure-self-service-password-reset-sspr">Lab 5 - Configure Self-service Password Reset (SSPR)</h1>
 <p>๊ผู้ใช้สามารถเปลี่ยน password ของตัวเองได้ถ้าเขาทราบ password เก่า (old password) แต่ถ้าไม่ทราบ password เก่า เขาสามารถใช้ SSPR เข้าไป reset password ของเขาเองเลยก็ได้ แต่เขาต้องถูก authentication ด้วย factor อื่นๆ แทนการป้อน password เก่า</p>
 <h2 id="task-1-configure-pilot-sspr">Task 1: Configure Pilot SSPR</h2>
-<h3 id="1-group-pilot-sspr">1. เลือก group ที่จะ pilot SSPR ก่อน</h3>
+<p>เลือก group ที่จะ pilot SSPR ก่อน</p>
 <p><a href="../../assets/screenshots/1.5.1%20password%20reset.jpg"><img alt="alt text" src="../../assets/screenshots/1.5.1%20password%20reset.jpg" /></a></p>
+<p>เช่น G IT</p>
 <p><a href="../../assets/screenshots/1.5.2%20pilot%20sspr.jpg"><img alt="alt text" src="../../assets/screenshots/1.5.2%20pilot%20sspr.jpg" /></a></p>
 <h2 id="task-2-review-default-sspr-settings">Task 2: Review default SSPR settings</h2>
+<p>ต่อมาเรามาดู default setting ของ SSPR กันครับ</p>
 <p>1. Authentication methods</p>
+<p>SSPR ต้องการให้ user authen ด้วย method ใด method หนึ่ง จะเป็น email หรือ SMS text ก็ได้ ก่อนที่เขาจะอนุญาตให้ผู้ใช้ตั้ง password ใหม่ให้กับตนเอง</p>
 <p><a href="../../assets/screenshots/1.5.3%20sspr%20authentication%20methods.jpg"><img alt="alt text" src="../../assets/screenshots/1.5.3%20sspr%20authentication%20methods.jpg" /></a></p>
 <p>2. Registration</p>
+<p>ถ้า user ถูก enable ให้ใช้งาน SSPR ได้ ในการ sign in ครั้งหน้าระบบจะบังคับให้ user register ข้อมูลที่จำเป็นสำหรับทำ SSPR เลย เช่น กรอกเบอร์โทรศัพท์</p>
 <p><a href="../../assets/screenshots/1.5.4%20sspr%20registration.jpg"><img alt="alt text" src="../../assets/screenshots/1.5.4%20sspr%20registration.jpg" /></a></p>
 <p>3. Notification</p>
+<p>์Notify user เมื่อ password ถูก reset</p>
 <p><a href="../../assets/screenshots/1.5.5%20sspr%20notifications.jpg"><img alt="alt text" src="../../assets/screenshots/1.5.5%20sspr%20notifications.jpg" /></a></p>
-<p>4. Onprem integration</p>
+<p>4. On-premises integration</p>
+<p>ยังไม่มีการ enable password writeback กลับไปยัง on-premises AD DS</p>
 <p><a href="../../assets/screenshots/1.5.6%20sspr%20onprem%20integration.jpg"><img alt="alt text" src="../../assets/screenshots/1.5.6%20sspr%20onprem%20integration.jpg" /></a></p>
 <h2 id="task-3-user-registration">Task 3: User registration</h2>
 <p>1. Sign out</p>
