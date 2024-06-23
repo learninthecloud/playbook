@@ -197,7 +197,7 @@
         
   
   <span class="md-ellipsis">
-    Welcome to the Playbook
+    Welcome to AZ-104 playbook
   </span>
   
 
@@ -926,13 +926,13 @@
 
   <h1>Lab 0. Create a new Microsoft Entra ID tenant</h1>
 
-<p>จริงๆ แล้ว ทุกคนน่าจะมี user account ใน Entra ID tenant ของบริษัทตัวเองอยู่แล้ว แต่เราอาจจะไม่มีสิทธิ์มากพอที่จะไปลองเล่นอะไรก็ได้ หรือถ้าเราทำอะไรไม่ระวังก็อาจจะทำให้ tenant ของบริษัทเสียหายได้ </p>
+<p>จริงๆ แล้ว ทุกคนน่าจะมี user account ใน Entra ID tenant ของบริษัทตัวเองอยู่แล้ว แต่เราอาจจะไม่มีสิทธิ์มากพอที่จะไปลองเล่นอะไรก็ได้ หรือ ถ้าเราทำอะไรไม่ระวังก็อาจจะทำให้ tenant ของบริษัทเสียหายได้</p>
 <p>ดังนั้น เพื่อความปลอดภัย เราสร้าง Entra ID tenant ใหม่ของเราเอง เพื่อใช้ทดลองเล่นจะดีกว่านะครับ</p>
 <blockquote>
-<p>หากเรายังไม่มี account ใดๆ เลย ก็สามารถสร้าง Entra ID tenant ตามนี้ได้ครับ <a href="https://learn.microsoft.com/th-th/entra/fundamentals/create-new-tenant">https://learn.microsoft.com/th-th/entra/fundamentals/create-new-tenant</a></p>
+<p>หากเรายังไม่มี account ใดๆ เลย ก็สามารถสร้าง Entra ID tenant ตามนี้ได้ครับ <a href="https://learn.microsoft.com/th-th/entra/fundamentals/create-new-tenant">Quickstart: Create a new tenant in Microsoft Entra ID</a></p>
 </blockquote>
 <h2 id="task-1-create-a-new-microsoft-entra-id-tenant">Task 1: Create a new Microsoft Entra ID tenant</h2>
-<p>1. ใน Azure portal (<a href="https://portal.azure.com">https://portal.azure.com</a>)</p>
+<p>1. เข้า Azure portal (<a href="https://portal.azure.com">https://portal.azure.com</a>)</p>
 <p>ไปที่ Microsoft Entra ID</p>
 <p><a href="../../assets/screenshots/1.0%20search%20entra%20id.jpg"><img alt="alt text" src="../../assets/screenshots/1.0%20search%20entra%20id.jpg" /></a></p>
 <p>Manage tenants</p>
@@ -941,7 +941,7 @@
 <p><a href="../../assets/screenshots/1.0%20create.jpg"><img alt="alt text" src="../../assets/screenshots/1.0%20create.jpg" /></a></p>
 <p>2. เลือก Microsoft Entra ID</p>
 <p><a href="../../assets/screenshots/1.0%20choose%20entra%20id.jpg"><img alt="alt text" src="../../assets/screenshots/1.0%20choose%20entra%20id.jpg" /></a></p>
-<p>ตั้งชื่อ tenant ของเรา your-tenant-name.onmicrosoft.com และใช้ Location = Thailand</p>
+<p>ชื่อ tenant จะอยู่ใน format your-tenant-name.onmicrosoft.com ให้เราตั้งชื่อ tenant ของเรา และใช้ Location = Thailand นะครับ</p>
 <p><a href="../../assets/screenshots/1.0%20enter%20tenant%20name.jpg"><img alt="alt text" src="../../assets/screenshots/1.0%20enter%20tenant%20name.jpg" /></a></p>
 <p>กด Create แล้วรอสักครู่จน tenant สร้างเสร็จ จากนั้นกด link เพื่อเข้า Entra ID tenant ใหม่ของเรา</p>
 <p><a href="../../assets/screenshots/1.0%20create%20tenant.jpg"><img alt="alt text" src="../../assets/screenshots/1.0%20create%20tenant.jpg" /></a></p>
@@ -950,9 +950,9 @@
 <h2 id="task-2-create-a-new-user-and-assign-global-administrator-role">Task 2: Create a new user and assign Global Administrator role</h2>
 <p>1. สร้าง user ใหม่</p>
 <p><a href="../../assets/screenshots/11%20create%20user.jpg"><img alt="alt text" src="../../assets/screenshots/11%20create%20user.jpg" /></a></p>
-<p>ระบุ user principal name ของ account ใหม่</p>
+<p>ระบุ user principal name (UPN) ของ account ใหม่</p>
 <blockquote>
-<p>Note: Copy password เอาไว้ใช้ หรือจะตั้งใหม่เองก็ได้ครับ</p>
+<p>หมายเหตุ: Copy password เอาไว้ใช้ หรือจะตั้งใหม่เองก็ได้ครับ</p>
 </blockquote>
 <p><a href="../../assets/screenshots/11%20name%20the%20user%203.jpg"><img alt="alt text" src="../../assets/screenshots/11%20name%20the%20user%203.jpg" /></a></p>
 <p>Next</p>
@@ -970,7 +970,7 @@
 <p><a href="../../assets/screenshots/10%20re-sign%20in%20again.jpg"><img alt="alt text" src="../../assets/screenshots/10%20re-sign%20in%20again.jpg" /></a></p>
 <p>ใส่ password ที่ copy เก็บไว้</p>
 <p><a href="../../assets/screenshots/10%20enter%20password.jpg"><img alt="alt text" src="../../assets/screenshots/10%20enter%20password.jpg" /></a></p>
-<p>เปลี่ยน password ใหม่</p>
+<p>ตั้ง password ใหม่</p>
 <p><a href="../../assets/screenshots/10%20update%20password.jpg"><img alt="alt text" src="../../assets/screenshots/10%20update%20password.jpg" /></a></p>
 <p>2. กด Cancel หรือ Get started</p>
 <p><a href="../../assets/screenshots/10%20cancel.jpg"><img alt="alt text" src="../../assets/screenshots/10%20cancel.jpg" /></a></p>
@@ -980,6 +980,7 @@
 <p><a href="../../assets/screenshots/10%20azure%20dashboard.jpg"><img alt="alt text" src="../../assets/screenshots/10%20azure%20dashboard.jpg" /></a></p>
 <p>ต่อจากนี้ ถ้าเราอยากทดลองอะไรก็ทำได้หมดเลยครับ</p>
 <p>...</p>
+<p><a href="https://learninthecloud.co">Learn In the Cloud</a></p>
 
 
 
