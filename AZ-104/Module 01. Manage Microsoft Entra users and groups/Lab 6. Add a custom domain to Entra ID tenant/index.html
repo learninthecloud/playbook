@@ -8,25 +8,23 @@
       
       
       
-        <link rel="canonical" href="https://learninthecloud/az-104/Module%2001.%20Manage%20Microsoft%20Entra%20users%20and%20groups/Lab%201.%20Create%20users%20and%20groups/">
+        <link rel="canonical" href="https://learninthecloud/az-104/AZ-104/Module%2001.%20Manage%20Microsoft%20Entra%20users%20and%20groups/Lab%206.%20Add%20a%20custom%20domain%20to%20Entra%20ID%20tenant/">
       
       
-        <link rel="prev" href="../Lab%200.%20Create%20a%20new%20Microsoft%20Entra%20ID%20tenant/">
+        <link rel="prev" href="../Lab%205.%20Configure%20self-service%20password%20reset%20%28SSPR%29/">
       
       
-        <link rel="next" href="../Lab%202.%20Manage%20user%20and%20group%20properties/">
       
-      
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.24">
     
     
       
-        <title>Lab 1. Create users and groups - AZ-104: Microsoft Azure Administrator Playbook</title>
+        <title>Lab 6. Add a custom domain to Entra ID tenant - AZ-104: Microsoft Azure Administrator Playbook</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.6543a935.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.6543a935.min.css">
       
       
 
@@ -45,9 +43,9 @@
       
     
     
-      <link rel="stylesheet" href="../../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -66,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#task-1-create-a-few-users" class="md-skip">
+        <a href="#task-1-buy-a-domain" class="md-skip">
           Skip to content
         </a>
       
@@ -82,7 +80,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="AZ-104: Microsoft Azure Administrator Playbook" class="md-header__button md-logo" aria-label="AZ-104: Microsoft Azure Administrator Playbook" data-md-component="logo">
+    <a href="../../.." title="AZ-104: Microsoft Azure Administrator Playbook" class="md-header__button md-logo" aria-label="AZ-104: Microsoft Azure Administrator Playbook" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -102,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Lab 1. Create users and groups
+              Lab 6. Add a custom domain to Entra ID tenant
             
           </span>
         </div>
@@ -177,7 +175,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="AZ-104: Microsoft Azure Administrator Playbook" class="md-nav__button md-logo" aria-label="AZ-104: Microsoft Azure Administrator Playbook" data-md-component="logo">
+    <a href="../../.." title="AZ-104: Microsoft Azure Administrator Playbook" class="md-nav__button md-logo" aria-label="AZ-104: Microsoft Azure Administrator Playbook" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -195,11 +193,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Welcome to the Playbook
+    Welcome to Microsoft Azure Playbook
   </span>
   
 
@@ -215,7 +213,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Prerequisites/" class="md-nav__link">
+      <a href="../../../Prerequisites/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -251,7 +249,7 @@
             
   
   <span class="md-ellipsis">
-    Module 01. Manage Microsoft Entra users and groups
+    AZ 104
   </span>
   
 
@@ -260,6 +258,43 @@
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            AZ 104
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Module 01. Manage Microsoft Entra users and groups
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_1">
             <span class="md-nav__icon md-icon"></span>
             Module 01. Manage Microsoft Entra users and groups
           </label>
@@ -290,28 +325,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Lab 1. Create users and groups
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../Lab%201.%20Create%20users%20and%20groups/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -320,51 +337,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#task-1-create-a-few-users" class="md-nav__link">
-    <span class="md-ellipsis">
-      Task 1: Create a few users
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#task-2-create-a-security-group" class="md-nav__link">
-    <span class="md-ellipsis">
-      Task 2: Create a security group
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#task-3-create-a-microsoft-365-group" class="md-nav__link">
-    <span class="md-ellipsis">
-      Task 3: Create a Microsoft 365 group
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -458,10 +430,28 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../Lab%206.%20Add%20a%20custom%20domain%20to%20Entra%20ID%20tenant/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Lab 6. Add a custom domain to Entra ID tenant
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -470,6 +460,68 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#task-1-buy-a-domain" class="md-nav__link">
+    <span class="md-ellipsis">
+      Task 1: Buy a domain
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#task-2-add-a-custom-domain" class="md-nav__link">
+    <span class="md-ellipsis">
+      Task 2: Add a custom domain
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#task-3-change-users-upn-suffixes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Task 3: Change users' UPN suffixes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#task-4-testing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Task 4: Testing
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -507,27 +559,36 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#task-1-create-a-few-users" class="md-nav__link">
+  <a href="#task-1-buy-a-domain" class="md-nav__link">
     <span class="md-ellipsis">
-      Task 1: Create a few users
+      Task 1: Buy a domain
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#task-2-create-a-security-group" class="md-nav__link">
+  <a href="#task-2-add-a-custom-domain" class="md-nav__link">
     <span class="md-ellipsis">
-      Task 2: Create a security group
+      Task 2: Add a custom domain
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#task-3-create-a-microsoft-365-group" class="md-nav__link">
+  <a href="#task-3-change-users-upn-suffixes" class="md-nav__link">
     <span class="md-ellipsis">
-      Task 3: Create a Microsoft 365 group
+      Task 3: Change users' UPN suffixes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#task-4-testing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Task 4: Testing
     </span>
   </a>
   
@@ -548,43 +609,56 @@
                   
 
 
-  <h1>Lab 1. Create users and groups</h1>
+  <h1>Lab 6. Add a custom domain to Entra ID tenant</h1>
 
-<p>ในหัวข้อนี้ เราจะสร้าง user และ group เพื่อใช้งาน</p>
-<h2 id="task-1-create-a-few-users">Task 1: Create a few users</h2>
-<p>1. สร้าง User1</p>
-<p><a href="../../assets/screenshots/1.1%20create%20a%20new%20user.jpg"><img alt="alt text" src="../../assets/screenshots/1.1%20create%20a%20new%20user.jpg" /></a></p>
-<p><a href="../../assets/screenshots/1.1%20user1.jpg"><img alt="alt text" src="../../assets/screenshots/1.1%20user1.jpg" /></a></p>
-<p>Department = IT</p>
-<p><a href="../../assets/screenshots/1.1%20user1%20department.jpg"><img alt="alt text" src="../../assets/screenshots/1.1%20user1%20department.jpg" /></a></p>
-<p>ไม่ assign role ใดๆ</p>
-<p><a href="../../assets/screenshots/1.1%20user1%20no%20role.jpg"><img alt="alt text" src="../../assets/screenshots/1.1%20user1%20no%20role.jpg" /></a></p>
-<p>แล้วกด Create</p>
-<p><a href="../../assets/screenshots/1.1%20user1%20create.jpg"><img alt="alt text" src="../../assets/screenshots/1.1%20user1%20create.jpg" /></a></p>
-<p>2. สร้าง User2</p>
-<p><a href="../../assets/screenshots/1.1%20create%20user2.jpg"><img alt="alt text" src="../../assets/screenshots/1.1%20create%20user2.jpg" /></a></p>
-<p>Department = HR</p>
-<p><a href="../../assets/screenshots/1.1%20user2%20department.jpg"><img alt="alt text" src="../../assets/screenshots/1.1%20user2%20department.jpg" /></a></p>
-<p>3. สร้าง User3</p>
-<p><a href="../../assets/screenshots/1.1%20create%20user3.jpg"><img alt="alt text" src="../../assets/screenshots/1.1%20create%20user3.jpg" /></a></p>
-<p>Department = HR</p>
-<p><a href="../../assets/screenshots/1.1%20user3%20department.jpg"><img alt="alt text" src="../../assets/screenshots/1.1%20user3%20department.jpg" /></a></p>
-<p>4. ตรวจสอบว่า user ใหม่ทั้ง 3 accounts ถูกสร้างแล้ว</p>
-<p><a href="../../assets/screenshots/1.1%20click%20users%20to%20review.jpg"><img alt="alt text" src="../../assets/screenshots/1.1%20click%20users%20to%20review.jpg" /></a></p>
-<p><a href="../../assets/screenshots/1.1%20review%20new%20users%20are%20created.jpg"><img alt="alt text" src="../../assets/screenshots/1.1%20review%20new%20users%20are%20created.jpg" /></a></p>
-<h2 id="task-2-create-a-security-group">Task 2: Create a security group</h2>
-<p>1. สร้าง security group</p>
-<p><a href="../../assets/screenshots/1.1%20create%20a%20new%20group.jpg"><img alt="alt text" src="../../assets/screenshots/1.1%20create%20a%20new%20group.jpg" /></a></p>
-<p>และเพิ่ม user1 เข้าไปเป็นสมาชิก</p>
-<p><a href="../../assets/screenshots/1.1%20security%20group%20g%20it%20and%20add%20user1.jpg"><img alt="alt text" src="../../assets/screenshots/1.1%20security%20group%20g%20it%20and%20add%20user1.jpg" /></a></p>
-<h2 id="task-3-create-a-microsoft-365-group">Task 3: Create a Microsoft 365 group</h2>
-<p>1. สร้าง Microsoft 365 group</p>
-<p><a href="../../assets/screenshots/1.1%20microsoft%20365%20g%20it%20365%20and%20add%20user1.jpg"><img alt="alt text" src="../../assets/screenshots/1.1%20microsoft%20365%20g%20it%20365%20and%20add%20user1.jpg" /></a></p>
-<p>และเพิ่ม user1 เข้าไปเป็นสมาชิก</p>
-<p><a href="../../assets/screenshots/1.1%20microsoft%20365%20g%20it%20365%20and%20add%20user1%202.jpg"><img alt="alt text" src="../../assets/screenshots/1.1%20microsoft%20365%20g%20it%20365%20and%20add%20user1%202.jpg" /></a></p>
-<p>2. ตรวจสอบว่าทั้ง 2 groups ถูกสร้างแล้ว</p>
-<p><a href="../../assets/screenshots/1.1%20review%20groups.jpg"><img alt="alt text" src="../../assets/screenshots/1.1%20review%20groups.jpg" /></a></p>
-<p><a href="../../assets/screenshots/1.1%202%20groups%20are%20created.jpg"><img alt="alt text" src="../../assets/screenshots/1.1%202%20groups%20are%20created.jpg" /></a></p>
+<p>จริงๆ แล้ว ในการทดลองใช้งาน Entra ID เราใช้แค่ชื่อ default tenant "your-tenant-name.onmicrosoft.com" ก็เพียงพอแล้ว</p>
+<p>แต่ถ้าเราอยากลองทำให้เหมือนจริง ก็อาจจะลองเพิ่ม custom domain เข้ามาใน Entra ID tenant ของเราได้</p>
+<p>จากนั้นก็ให้ user ใช้ username@domain.xxx แทน username@your-tenant-name.onmicrosoft.com ได้เลยครับ</p>
+<h2 id="task-1-buy-a-domain">Task 1: Buy a domain</h2>
+<p>1. ซื้อ domain ราคาถูก จากที่ไหนก็ได้</p>
+<p>เลือกแค่ 1 ปี</p>
+<p><a href="../assets/screenshots/1.6.1 buy the domain.jpg"><img alt="alt text" src="../assets/screenshots/1.6.1 buy the domain.jpg" /></a></p>
+<p>ปิดทุก option ที่จะทำให้เราเสียเงินเพิ่ม</p>
+<p><a href="../assets/screenshots/1.6.2 reduce cost.jpg"><img alt="alt text" src="../assets/screenshots/1.6.2 reduce cost.jpg" /></a></p>
+<p>แล้วกดซื้อ</p>
+<p><a href="../assets/screenshots/1.6.3 complete purchase.jpg"><img alt="alt text" src="../assets/screenshots/1.6.3 complete purchase.jpg" /></a></p>
+<p>ตอนนี้เราได้ domain ที่จะนำไปเพิ่มลงใน tenant ของเราแล้ว</p>
+<p><a href="../assets/screenshots/1.6.4 complete purchase 2.jpg"><img alt="alt text" src="../assets/screenshots/1.6.4 complete purchase 2.jpg" /></a></p>
+<p>2. อย่าลืมเข้ามาปิด auto renew ด้วยนะครับ</p>
+<p><a href="../assets/screenshots/1.6.5 turn off auto renew.jpg"><img alt="alt text" src="../assets/screenshots/1.6.5 turn off auto renew.jpg" /></a></p>
+<h2 id="task-2-add-a-custom-domain">Task 2: Add a custom domain</h2>
+<p>1. ใน Azure portal เลือก Add custom domain</p>
+<p><a href="../assets/screenshots/1.6.6 add a custom domain.jpg"><img alt="alt text" src="../assets/screenshots/1.6.6 add a custom domain.jpg" /></a></p>
+<p>copy ข้อมูล txt record ที่ระบบ generate ให้</p>
+<p><a href="../assets/screenshots/1.6.7 txt record info.jpg"><img alt="alt text" src="../assets/screenshots/1.6.7 txt record info.jpg" /></a></p>
+<p>2. แล้วนำข้อมูล TXT record ไปสร้างใน DNS zone ที่เราพึ่งจดทะเบียนไป</p>
+<p><a href="../assets/screenshots/1.6.9 add txt record to dns.jpg"><img alt="alt text" src="../assets/screenshots/1.6.9 add txt record to dns.jpg" /></a></p>
+<p>3. จากนั้นกลับไปที่ Azure portal เพื่อ verify domain</p>
+<p>รอสักครู่ แล้วค่อยกด verify หรืออาจลองกด verify หลายๆ ครั้งหน่อย จนสำเร็จ</p>
+<p><a href="../assets/screenshots/1.6.10 verify domain.jpg"><img alt="alt text" src="../assets/screenshots/1.6.10 verify domain.jpg" /></a></p>
+<p>4. เลือก domain ใหม่</p>
+<p><a href="../assets/screenshots/1.6.11 select new domain.jpg"><img alt="alt text" src="../assets/screenshots/1.6.11 select new domain.jpg" /></a></p>
+<p>แล้วแล้ว Make primary</p>
+<p><a href="../assets/screenshots/1.6.12 make primary.jpg"><img alt="alt text" src="../assets/screenshots/1.6.12 make primary.jpg" /></a></p>
+<p>ตอนนี้ domain ใหม่เป็น primary domain แล้ว</p>
+<p><a href="../assets/screenshots/1.6.13 verify the new domain is primary.jpg"><img alt="alt text" src="../assets/screenshots/1.6.13 verify the new domain is primary.jpg" /></a></p>
+<h2 id="task-3-change-users-upn-suffixes">Task 3: Change users' UPN suffixes</h2>
+<p>1. เปลี่ยน UPN suffix ของ user1</p>
+<p><a href="../assets/screenshots/1.6.14 user1 properties.jpg"><img alt="alt text" src="../assets/screenshots/1.6.14 user1 properties.jpg" /></a></p>
+<p>เลือก domain ใหม่ที่พึ่งเพิ่มเข้ามา</p>
+<p><a href="../assets/screenshots/1.6.15 change upn user1.jpg"><img alt="alt text" src="../assets/screenshots/1.6.15 change upn user1.jpg" /></a></p>
+<p><a href="../assets/screenshots/1.6.15 user1 changed.jpg"><img alt="alt text" src="../assets/screenshots/1.6.15 user1 changed.jpg" /></a></p>
+<p>2. เปลี่ยน UPN suffix ของ user2 และ user3</p>
+<p><a href="../assets/screenshots/1.6.16 3 users changed.jpg"><img alt="alt text" src="../assets/screenshots/1.6.16 3 users changed.jpg" /></a></p>
+<h2 id="task-4-testing">Task 4: Testing</h2>
+<p>1. ลอง sign in ด้วย UPN เดิม เช่น user1@your-tenant-name.onmicrosoft.com</p>
+<p>เราจะ sign in ไม่ได้</p>
+<p><a href="../assets/screenshots/1.6.17 test the old upn.jpg"><img alt="alt text" src="../assets/screenshots/1.6.17 test the old upn.jpg" /></a></p>
+<p>2. ลอง sign in อีกครั้งด้วย UPN ใหม่ user1@domain.xxx</p>
+<p><a href="../assets/screenshots/1.6.18 sign in with the new upn.jpg"><img alt="alt text" src="../assets/screenshots/1.6.18 sign in with the new upn.jpg" /></a></p>
+<p><a href="../assets/screenshots/1.6.19 password.jpg"><img alt="alt text" src="../assets/screenshots/1.6.19 password.jpg" /></a></p>
+<p>ตอนนี้ user สามารถ sign in ด้วย UPN ใหม่ได้แล้ว</p>
+<p><a href="../assets/screenshots/1.6.20 verify signed in.jpg"><img alt="alt text" src="../assets/screenshots/1.6.20 verify signed in.jpg" /></a></p>
 <p>...</p>
 <p><a href="https://learninthecloud.co">Learn In the Cloud</a></p>
 
@@ -633,10 +707,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.081f42fc.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.081f42fc.min.js"></script>
       
     
   </body>
