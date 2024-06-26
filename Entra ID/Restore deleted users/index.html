@@ -8,9 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://learninthecloud/azure-playbook/Entra%20ID/Lab%202.%20Manage%20user%20and%20group%20properties/">
+        <link rel="canonical" href="https://learninthecloud/azure-playbook/Entra%20ID/Restore%20deleted%20users/">
       
       
+        <link rel="prev" href="../Create%20users%20and%20groups/">
+      
+      
+        <link rel="next" href="../Group-based%20licensing/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -18,7 +22,7 @@
     
     
       
-        <title>Lab 2. Manage user and group properties - Microsoft Azure Playbook</title>
+        <title>Restore deleted users - Microsoft Azure Playbook</title>
       
     
     
@@ -96,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Lab 2. Manage user and group properties
+              Restore deleted users
             
           </span>
         </div>
@@ -181,11 +185,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../Lab%200.%20Create%20a%20new%20Microsoft%20Entra%20ID%20tenant/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../Create%20a%20new%20tenant/" class="md-tabs__link">
           
   
   Entra ID
@@ -320,23 +326,28 @@
       
   
   
+    
   
   
+  
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -347,7 +358,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Entra ID
@@ -361,11 +372,200 @@
   
   
     <li class="md-nav__item">
-      <a href="../Lab%200.%20Create%20a%20new%20Microsoft%20Entra%20ID%20tenant/" class="md-nav__link">
+      <a href="../Create%20a%20new%20tenant/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Basic Entra ID
+    Create a new tenant
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Create%20users%20and%20groups/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Create users
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Create%20users%20and%20groups/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Create users
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Restore deleted users
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Restore deleted users
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#task-1-review-users-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      Task 1: Review user's properties
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#task-2-delete-and-restore-the-user-account" class="md-nav__link">
+    <span class="md-ellipsis">
+      Task 2: Delete and restore the user account
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#task-3-review-groups-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      Task 3: Review group's properties
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Group-based%20licensing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Group-based licensing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Invite%20guests/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Invite guests
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Add%20a%20custom%20domain/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Add a custom domain
   </span>
   
 
@@ -448,7 +648,7 @@
                   
 
 
-  <h1>Lab 2. Manage user and group properties</h1>
+  <h1>Restore deleted users</h1>
 
 <p>ลองรีวิว user, ลบ และกู้คืน, และรีวิว group</p>
 <h2 id="task-1-review-users-properties">Task 1: Review user's properties</h2>

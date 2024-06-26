@@ -8,9 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://learninthecloud/azure-playbook/Entra%20ID/Lab%205.%20Configure%20self-service%20password%20reset%20%28SSPR%29/">
+        <link rel="canonical" href="https://learninthecloud/azure-playbook/Entra%20ID/Create%20a%20new%20tenant/">
       
       
+        <link rel="prev" href="../../Prerequisites/">
+      
+      
+        <link rel="next" href="../Create%20users%20and%20groups/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -18,7 +22,7 @@
     
     
       
-        <title>Lab 5. Configure self service password reset (SSPR) - Microsoft Azure Playbook</title>
+        <title>Create a new tenant - Microsoft Azure Playbook</title>
       
     
     
@@ -62,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#task-1-configure-pilot-sspr" class="md-skip">
+        <a href="#task-1-create-a-new-microsoft-entra-id-tenant" class="md-skip">
           Skip to content
         </a>
       
@@ -96,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Lab 5. Configure self service password reset (SSPR)
+              Create a new tenant
             
           </span>
         </div>
@@ -181,11 +185,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../Lab%200.%20Create%20a%20new%20Microsoft%20Entra%20ID%20tenant/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
           
   
   Entra ID
@@ -320,23 +326,28 @@
       
   
   
+    
   
   
+  
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -347,7 +358,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Entra ID
@@ -358,14 +369,203 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../Lab%200.%20Create%20a%20new%20Microsoft%20Entra%20ID%20tenant/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Create a new tenant
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
-    Basic Entra ID
+    Create a new tenant
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#task-1-create-a-new-microsoft-entra-id-tenant" class="md-nav__link">
+    <span class="md-ellipsis">
+      Task 1: Create a new Microsoft Entra ID tenant
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#task-2-create-a-new-user-and-assign-global-administrator-role" class="md-nav__link">
+    <span class="md-ellipsis">
+      Task 2: Create a new user and assign Global Administrator role
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#task-3-sign-in-with-a-new-global-administrator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Task 3: Sign in with a new global administrator
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Create%20users%20and%20groups/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Create users
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Create%20users%20and%20groups/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Create users
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Restore%20deleted%20users/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Restore deleted users
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Group-based%20licensing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Group-based licensing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Invite%20guests/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Invite guests
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Add%20a%20custom%20domain/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Add a custom domain
   </span>
   
 
@@ -407,45 +607,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#task-1-configure-pilot-sspr" class="md-nav__link">
+  <a href="#task-1-create-a-new-microsoft-entra-id-tenant" class="md-nav__link">
     <span class="md-ellipsis">
-      Task 1: Configure Pilot SSPR
+      Task 1: Create a new Microsoft Entra ID tenant
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#task-2-review-default-sspr-settings" class="md-nav__link">
+  <a href="#task-2-create-a-new-user-and-assign-global-administrator-role" class="md-nav__link">
     <span class="md-ellipsis">
-      Task 2: Review default SSPR settings
+      Task 2: Create a new user and assign Global Administrator role
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#task-3-test-user-registration" class="md-nav__link">
+  <a href="#task-3-sign-in-with-a-new-global-administrator" class="md-nav__link">
     <span class="md-ellipsis">
-      Task 3: Test user registration
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#task-4-test-password-reset" class="md-nav__link">
-    <span class="md-ellipsis">
-      Task 4: Test password reset
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#task-5-admin-verifies-logs" class="md-nav__link">
-    <span class="md-ellipsis">
-      Task 5: Admin verifies logs
+      Task 3: Sign in with a new global administrator
     </span>
   </a>
   
@@ -466,76 +648,61 @@
                   
 
 
-  <h1>Lab 5. Configure self service password reset (SSPR)</h1>
+  <h1>Create a new tenant</h1>
 
-<p>โดยทั่วไป ผู้ใช้สามารถเปลี่ยน password ของตัวเองได้ถ้าเขาทราบ password เก่า (old password)</p>
-<p>แต่ถ้าไม่ทราบ password เก่า เขาสามารถใช้ SSPR เข้าไป reset password ของตัวเองได้ แต่เขาต้องถูก authenticate ด้วยวิธีอื่นๆ ก่อน เช่น SMS text, mobile app, หรือ email เป็นต้น</p>
-<h2 id="task-1-configure-pilot-sspr">Task 1: Configure Pilot SSPR</h2>
-<p>เลือก group ที่จะ pilot SSPR ก่อน</p>
-<p><a href="../../assets/screenshots/1.5.1%20password%20reset.jpg"><img alt="alt text" src="../../assets/screenshots/1.5.1%20password%20reset.jpg" /></a></p>
-<p>เช่น G IT</p>
-<p><a href="../../assets/screenshots/1.5.2%20pilot%20sspr.jpg"><img alt="alt text" src="../../assets/screenshots/1.5.2%20pilot%20sspr.jpg" /></a></p>
-<h2 id="task-2-review-default-sspr-settings">Task 2: Review default SSPR settings</h2>
-<p>ต่อมาเรามาดู default setting ของ SSPR กันครับ</p>
-<p>1. Authentication methods</p>
-<p>SSPR จะขอให้ user ทำ authenticadtion ด้วย method ใด method หนึ่ง จะเป็น email หรือ SMS text ก็ได้ ก่อนที่จะอนุญาตให้ผู้ใช้ตั้ง password ใหม่ของตัวเอง</p>
-<p><a href="../../assets/screenshots/1.5.3%20sspr%20authentication%20methods.jpg"><img alt="alt text" src="../../assets/screenshots/1.5.3%20sspr%20authentication%20methods.jpg" /></a></p>
-<p>2. Registration</p>
-<p>ในการ sign in ครั้งถัดไป user ที่ถูก enable SSPR จะถูกระบบบังคับให้ register ข้อมูลที่จำเป็นสำหรับทำ SSPR เช่น ให้ระบุเบอร์โทรศัพท์ที่จะให้ SSPR ส่ง SMS text ไปหา</p>
-<p><a href="../../assets/screenshots/1.5.4%20sspr%20registration.jpg"><img alt="alt text" src="../../assets/screenshots/1.5.4%20sspr%20registration.jpg" /></a></p>
-<p>3. Notification</p>
-<p>ให้แจ้ง user เมื่อ password ถูก reset</p>
-<p><a href="../../assets/screenshots/1.5.5%20sspr%20notifications.jpg"><img alt="alt text" src="../../assets/screenshots/1.5.5%20sspr%20notifications.jpg" /></a></p>
-<p>4. On-premises integration</p>
-<p>ยังไม่มีการ enable password writeback กลับไปยัง on-premises AD DS</p>
-<p><a href="../../assets/screenshots/1.5.6%20sspr%20onprem%20integration.jpg"><img alt="alt text" src="../../assets/screenshots/1.5.6%20sspr%20onprem%20integration.jpg" /></a></p>
-<p>ตอนนี้ SSPR พร้อมใช้งานกับ pilot user  แล้ว ในหัวข้อถัดไปเรามาทดสอบกันต่อครับ</p>
-<h2 id="task-3-test-user-registration">Task 3: Test user registration</h2>
-<p>1. ลอง sign out user1</p>
-<p><a href="../../assets/screenshots/1.5.7%20user1%20sign%20out.jpg"><img alt="alt text" src="../../assets/screenshots/1.5.7%20user1%20sign%20out.jpg" /></a></p>
-<p>แล้ว sign in ใหม่</p>
-<p><a href="../../assets/screenshots/1.5.8%20user1%20sign%20in%20again.jpg"><img alt="alt text" src="../../assets/screenshots/1.5.8%20user1%20sign%20in%20again.jpg" /></a></p>
-<p>2. ระบบจะขอให้เราทำ registration</p>
-<p><a href="../../assets/screenshots/1.5.9%20user1%20sign%20in%20again%202.jpg"><img alt="alt text" src="../../assets/screenshots/1.5.9%20user1%20sign%20in%20again%202.jpg" /></a></p>
-<p>กรอกเบอร์โทรศัพท์ของ user1 ที่จะใช้รับ SMS text (ให้ระบุเบอร์โทรของเรา)</p>
-<p>แล้วทำขั้นตอนต่างๆ ต่อไปเรื่อยๆ จนเสร็จ</p>
-<p><a href="../../assets/screenshots/1.5.10%20sspr%20user1%20registeration%201.jpg"><img alt="alt text" src="../../assets/screenshots/1.5.10%20sspr%20user1%20registeration%201.jpg" /></a></p>
-<p><a href="../../assets/screenshots/1.5.11%20sspr%20user1%20registeration%202.jpg"><img alt="alt text" src="../../assets/screenshots/1.5.11%20sspr%20user1%20registeration%202.jpg" /></a></p>
-<p>ตอนนี้เรา register ข้อมุลที่ระบบขอเรียบร้อยแล้ว</p>
-<p><a href="../../assets/screenshots/1.5.12%20sspr%20user1%20registeration%203.jpg"><img alt="alt text" src="../../assets/screenshots/1.5.12%20sspr%20user1%20registeration%203.jpg" /></a></p>
-<p><a href="../../assets/screenshots/1.5.13%20sspr%20user1%20registeration%204.jpg"><img alt="alt text" src="../../assets/screenshots/1.5.13%20sspr%20user1%20registeration%204.jpg" /></a></p>
-<p>3. sign in อีกครั้ง</p>
-<p><a href="../../assets/screenshots/1.5.14%20sign%20in%20again.jpg"><img alt="alt text" src="../../assets/screenshots/1.5.14%20sign%20in%20again.jpg" /></a></p>
-<p><a href="../../assets/screenshots/1.5.15%20sign%20in%20again.jpg"><img alt="alt text" src="../../assets/screenshots/1.5.15%20sign%20in%20again.jpg" /></a></p>
-<p>4. แล้ว sign out</p>
-<p><a href="../../assets/screenshots/1.5.16%20sign%20out.jpg"><img alt="alt text" src="../../assets/screenshots/1.5.16%20sign%20out.jpg" /></a></p>
-<p>จากนั้น เราไปลองทดสอบ reset password ของ user1 ผ่าน SSPR กันครับ</p>
-<h2 id="task-4-test-password-reset">Task 4: Test password reset</h2>
-<p>1. ลอง sign in ด้วย user1 แต่ไม่ต้องใส่ password</p>
-<p>ให้เรากด forgot my password แทน</p>
-<p><a href="../../assets/screenshots/1.5.17%20forgot%20password.jpg"><img alt="alt text" src="../../assets/screenshots/1.5.17%20forgot%20password.jpg" /></a></p>
-<p>2. แล้วเริ่มกระบวณการ reset password</p>
-<p><a href="../../assets/screenshots/1.5.18%20forgot%20password%202.jpg"><img alt="alt text" src="../../assets/screenshots/1.5.18%20forgot%20password%202.jpg" /></a></p>
-<p><a href="../../assets/screenshots/1.5.19%20forgot%20password%203.jpg"><img alt="alt text" src="../../assets/screenshots/1.5.19%20forgot%20password%203.jpg" /></a></p>
-<p><a href="../../assets/screenshots/1.5.20%20forgot%20password%204.jpg"><img alt="alt text" src="../../assets/screenshots/1.5.20%20forgot%20password%204.jpg" /></a></p>
-<p>ตั้ง password ใหม่ (แต่ password policy ใน Entra ID อาจทำให้ตั้งยากหน่อย)</p>
-<p><a href="../../assets/screenshots/1.5.21%20set%20new%20password.jpg"><img alt="alt text" src="../../assets/screenshots/1.5.21%20set%20new%20password.jpg" /></a></p>
-<p><a href="../../assets/screenshots/1.5.22%20set%20new%20password%20success.jpg"><img alt="alt text" src="../../assets/screenshots/1.5.22%20set%20new%20password%20success.jpg" /></a></p>
-<p>3. สุดท้ายลอง sign in อีกครั้งด้วย password ใหม่</p>
-<p><a href="../../assets/screenshots/1.5.22%20sign%20in%20with%20new%20password%201.jpg"><img alt="alt text" src="../../assets/screenshots/1.5.22%20sign%20in%20with%20new%20password%201.jpg" /></a></p>
-<p><a href="../../assets/screenshots/1.5.23%20sign%20in%20with%20new%20password%202.jpg"><img alt="alt text" src="../../assets/screenshots/1.5.23%20sign%20in%20with%20new%20password%202.jpg" /></a></p>
-<p><a href="../../assets/screenshots/1.5.24%20sign%20in%20with%20new%20password%203.jpg"><img alt="alt text" src="../../assets/screenshots/1.5.24%20sign%20in%20with%20new%20password%203.jpg" /></a></p>
-<p>ตอนนี้ user1 sign in ด้วย password ใหม่ได้เรียบร้อยแล้ว</p>
-<p><a href="../../assets/screenshots/1.5.25%20sign%20in%20with%20new%20password%20success.jpg"><img alt="alt text" src="../../assets/screenshots/1.5.25%20sign%20in%20with%20new%20password%20success.jpg" /></a></p>
-<h2 id="task-5-admin-verifies-logs">Task 5: Admin verifies logs</h2>
-<p>1. ในฐานะ admin</p>
-<p>เราลองหา activity Reset password (self-service) จาก audit log ดู</p>
-<p><a href="../../assets/screenshots/1.5.26%20admin%20verify%201.jpg"><img alt="alt text" src="../../assets/screenshots/1.5.26%20admin%20verify%201.jpg" /></a></p>
-<p>ลองดูข้อมูลอื่นๆ เพิ่มเติม</p>
-<p><a href="../../assets/screenshots/1.5.27%20admin%20verify%202.jpg"><img alt="alt text" src="../../assets/screenshots/1.5.27%20admin%20verify%202.jpg" /></a></p>
-<p>2. ลองเปิด user properties</p>
-<p>แล้วลองดูค่า Last password change date time เป็นต้น</p>
-<p><a href="../../assets/screenshots/1.5.28%20admin%20verify%203.jpg"><img alt="alt text" src="../../assets/screenshots/1.5.28%20admin%20verify%203.jpg" /></a></p>
+<p>จริงๆ แล้ว ทุกคนน่าจะมี user account ใน Entra ID tenant ของบริษัทตัวเองอยู่แล้ว แต่เราอาจจะไม่มีสิทธิ์มากพอที่จะไปลองเล่นอะไรก็ได้ หรือ ถ้าเราทำอะไรไม่ระวังก็อาจจะทำให้ tenant ของบริษัทเสียหายได้</p>
+<p>ดังนั้น เพื่อความปลอดภัย เราสร้าง Entra ID tenant ใหม่ของเราเอง เพื่อใช้ทดลองเล่นจะดีกว่านะครับ</p>
+<blockquote>
+<p>หากเรายังไม่มี account ใดๆ เลย ก็สามารถสร้าง Entra ID tenant ตามนี้ได้ครับ <a href="https://learn.microsoft.com/th-th/entra/fundamentals/create-new-tenant">Quickstart: Create a new tenant in Microsoft Entra ID</a></p>
+</blockquote>
+<h2 id="task-1-create-a-new-microsoft-entra-id-tenant">Task 1: Create a new Microsoft Entra ID tenant</h2>
+<p>1. เข้า Azure portal (<a href="https://portal.azure.com">https://portal.azure.com</a>)</p>
+<p>ไปที่ Microsoft Entra ID</p>
+<p><a href="../../assets/screenshots/1.0%20search%20entra%20id.jpg"><img alt="alt text" src="../../assets/screenshots/1.0%20search%20entra%20id.jpg" /></a></p>
+<p>Manage tenants</p>
+<p><a href="../../assets/screenshots/1.0%20manage%20tenants.jpg"><img alt="alt text" src="../../assets/screenshots/1.0%20manage%20tenants.jpg" /></a></p>
+<p>Create</p>
+<p><a href="../../assets/screenshots/1.0%20create.jpg"><img alt="alt text" src="../../assets/screenshots/1.0%20create.jpg" /></a></p>
+<p>2. เลือก Microsoft Entra ID</p>
+<p><a href="../../assets/screenshots/1.0%20choose%20entra%20id.jpg"><img alt="alt text" src="../../assets/screenshots/1.0%20choose%20entra%20id.jpg" /></a></p>
+<p>ชื่อ tenant จะอยู่ใน format your-tenant-name.onmicrosoft.com ให้เราตั้งชื่อ tenant ของเรา และใช้ Location = Thailand นะครับ</p>
+<p><a href="../../assets/screenshots/1.0%20enter%20tenant%20name.jpg"><img alt="alt text" src="../../assets/screenshots/1.0%20enter%20tenant%20name.jpg" /></a></p>
+<p>กด Create แล้วรอสักครู่จน tenant สร้างเสร็จ จากนั้นกด link เพื่อเข้า Entra ID tenant ใหม่ของเรา</p>
+<p><a href="../../assets/screenshots/1.0%20create%20tenant.jpg"><img alt="alt text" src="../../assets/screenshots/1.0%20create%20tenant.jpg" /></a></p>
+<p>3. ตอนนี้เราได้ Entra ID tenant แล้วนะครับ</p>
+<p><a href="../../assets/screenshots/1.0%20result.jpg"><img alt="alt text" src="../../assets/screenshots/1.0%20result.jpg" /></a></p>
+<h2 id="task-2-create-a-new-user-and-assign-global-administrator-role">Task 2: Create a new user and assign Global Administrator role</h2>
+<p>1. สร้าง user ใหม่</p>
+<p><a href="../../assets/screenshots/11%20create%20user.jpg"><img alt="alt text" src="../../assets/screenshots/11%20create%20user.jpg" /></a></p>
+<p>ระบุ user principal name (UPN) ของ account ใหม่</p>
+<blockquote>
+<p>หมายเหตุ: Copy password เอาไว้ใช้ หรือจะตั้งใหม่เองก็ได้ครับ</p>
+</blockquote>
+<p><a href="../../assets/screenshots/11%20name%20the%20user%203.jpg"><img alt="alt text" src="../../assets/screenshots/11%20name%20the%20user%203.jpg" /></a></p>
+<p>Next</p>
+<p><a href="../../assets/screenshots/11%20properties%203.jpg"><img alt="alt text" src="../../assets/screenshots/11%20properties%203.jpg" /></a></p>
+<p>2. Assign Global Administrator role</p>
+<p><a href="../../assets/screenshots/11%20assign%20global%20admin%20role.jpg"><img alt="alt text" src="../../assets/screenshots/11%20assign%20global%20admin%20role.jpg" /></a></p>
+<p>แล้วกด Create</p>
+<p><a href="../../assets/screenshots/11%20verify%20and%20create.jpg"><img alt="alt text" src="../../assets/screenshots/11%20verify%20and%20create.jpg" /></a></p>
+<p>3. เข้าไปดูผลลัพธ์ที่ Users</p>
+<p><a href="../../assets/screenshots/11%20review%20the%20result.jpg"><img alt="alt text" src="../../assets/screenshots/11%20review%20the%20result.jpg" /></a></p>
+<p>เมื่อเราได้ global administrator ใหม่ของ Entra ID tenant ใหม่แล้ว เราก็ Sign out ได้เลย</p>
+<p><a href="../../assets/screenshots/11%20sign%20out.jpg"><img alt="alt text" src="../../assets/screenshots/11%20sign%20out.jpg" /></a></p>
+<h2 id="task-3-sign-in-with-a-new-global-administrator">Task 3: Sign in with a new global administrator</h2>
+<p>1. Sign in เข้า <a href="https://portal.azure.com">https://portal.azure.com</a> ด้วย global administrator คนใหม่</p>
+<p><a href="../../assets/screenshots/10%20re-sign%20in%20again.jpg"><img alt="alt text" src="../../assets/screenshots/10%20re-sign%20in%20again.jpg" /></a></p>
+<p>ใส่ password ที่ copy เก็บไว้</p>
+<p><a href="../../assets/screenshots/10%20enter%20password.jpg"><img alt="alt text" src="../../assets/screenshots/10%20enter%20password.jpg" /></a></p>
+<p>ตั้ง password ใหม่</p>
+<p><a href="../../assets/screenshots/10%20update%20password.jpg"><img alt="alt text" src="../../assets/screenshots/10%20update%20password.jpg" /></a></p>
+<p>2. กด Cancel หรือ Get started</p>
+<p><a href="../../assets/screenshots/10%20cancel.jpg"><img alt="alt text" src="../../assets/screenshots/10%20cancel.jpg" /></a></p>
+<p>ปิด Quickstart Center หรือลองรีวิวดู</p>
+<p><a href="../../assets/screenshots/10%20close.jpg"><img alt="alt text" src="../../assets/screenshots/10%20close.jpg" /></a></p>
+<p>ตอนนี้ global administrator คนใหม่ sign in เข้ามาที่ Entra ID tenant ใหม่เรียบร้อยแล้ว</p>
+<p><a href="../../assets/screenshots/10%20azure%20dashboard.jpg"><img alt="alt text" src="../../assets/screenshots/10%20azure%20dashboard.jpg" /></a></p>
+<p>ต่อจากนี้ ถ้าเราอยากทดลองอะไรก็ทำได้หมดเลยครับ</p>
 <p>...</p>
 <p><a href="https://learninthecloud.co">Learn In the Cloud</a></p>
 

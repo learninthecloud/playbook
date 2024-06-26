@@ -8,7 +8,7 @@
       
       
       
-        <link rel="canonical" href="https://learninthecloud/azure-playbook/Entra%20ID/Lab%206.%20Add%20a%20custom%20domain%20to%20Entra%20ID%20tenant/">
+        <link rel="canonical" href="https://learninthecloud/azure-playbook/Entra%20ID/SSPR/">
       
       
       
@@ -18,7 +18,7 @@
     
     
       
-        <title>Lab 6. Add a custom domain to Entra ID tenant - Microsoft Azure Playbook</title>
+        <title>SSPR - Microsoft Azure Playbook</title>
       
     
     
@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#task-1-buy-a-domain" class="md-skip">
+        <a href="#task-1-configure-pilot-sspr" class="md-skip">
           Skip to content
         </a>
       
@@ -96,7 +96,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Lab 6. Add a custom domain to Entra ID tenant
+              SSPR
             
           </span>
         </div>
@@ -185,7 +185,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../Lab%200.%20Create%20a%20new%20Microsoft%20Entra%20ID%20tenant/" class="md-tabs__link">
+        <a href="../Create%20a%20new%20tenant/" class="md-tabs__link">
           
   
   Entra ID
@@ -361,11 +361,137 @@
   
   
     <li class="md-nav__item">
-      <a href="../Lab%200.%20Create%20a%20new%20Microsoft%20Entra%20ID%20tenant/" class="md-nav__link">
+      <a href="../Create%20a%20new%20tenant/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Basic Entra ID
+    Create a new tenant
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Create%20users%20and%20groups/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Create users
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Create%20users%20and%20groups/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Create users
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Restore%20deleted%20users/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Restore deleted users
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Group-based%20licensing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Group-based licensing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Invite%20guests/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Invite guests
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Add%20a%20custom%20domain/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Add a custom domain
   </span>
   
 
@@ -407,36 +533,45 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#task-1-buy-a-domain" class="md-nav__link">
+  <a href="#task-1-configure-pilot-sspr" class="md-nav__link">
     <span class="md-ellipsis">
-      Task 1: Buy a domain
+      Task 1: Configure Pilot SSPR
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#task-2-add-a-custom-domain" class="md-nav__link">
+  <a href="#task-2-review-default-sspr-settings" class="md-nav__link">
     <span class="md-ellipsis">
-      Task 2: Add a custom domain
+      Task 2: Review default SSPR settings
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#task-3-change-users-upn-suffixes" class="md-nav__link">
+  <a href="#task-3-test-user-registration" class="md-nav__link">
     <span class="md-ellipsis">
-      Task 3: Change users' UPN suffixes
+      Task 3: Test user registration
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#task-4-testing" class="md-nav__link">
+  <a href="#task-4-test-password-reset" class="md-nav__link">
     <span class="md-ellipsis">
-      Task 4: Testing
+      Task 4: Test password reset
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#task-5-admin-verifies-logs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Task 5: Admin verifies logs
     </span>
   </a>
   
@@ -457,56 +592,76 @@
                   
 
 
-  <h1>Lab 6. Add a custom domain to Entra ID tenant</h1>
+  <h1>SSPR</h1>
 
-<p>จริงๆ แล้ว ในการทดลองใช้งาน Entra ID เราใช้แค่ชื่อ default tenant "your-tenant-name.onmicrosoft.com" ก็เพียงพอแล้ว</p>
-<p>แต่ถ้าเราอยากลองทำให้เหมือนจริง ก็อาจจะลองเพิ่ม custom domain เข้ามาใน Entra ID tenant ของเราได้</p>
-<p>จากนั้นก็ให้ user ใช้ username@domain.xxx แทน username@your-tenant-name.onmicrosoft.com ได้เลยครับ</p>
-<h2 id="task-1-buy-a-domain">Task 1: Buy a domain</h2>
-<p>1. ซื้อ domain ราคาถูก จากที่ไหนก็ได้</p>
-<p>เลือกแค่ 1 ปี</p>
-<p><a href="../../assets/screenshots/1.6.1%20buy%20the%20domain.jpg"><img alt="alt text" src="../../assets/screenshots/1.6.1%20buy%20the%20domain.jpg" /></a></p>
-<p>ปิดทุก option ที่จะทำให้เราเสียเงินเพิ่ม</p>
-<p><a href="../../assets/screenshots/1.6.2%20reduce%20cost.jpg"><img alt="alt text" src="../../assets/screenshots/1.6.2%20reduce%20cost.jpg" /></a></p>
-<p>แล้วกดซื้อ</p>
-<p><a href="../../assets/screenshots/1.6.3%20complete%20purchase.jpg"><img alt="alt text" src="../../assets/screenshots/1.6.3%20complete%20purchase.jpg" /></a></p>
-<p>ตอนนี้เราได้ domain ที่จะนำไปเพิ่มลงใน tenant ของเราแล้ว</p>
-<p><a href="../../assets/screenshots/1.6.4%20complete%20purchase%202.jpg"><img alt="alt text" src="../../assets/screenshots/1.6.4%20complete%20purchase%202.jpg" /></a></p>
-<p>2. อย่าลืมเข้ามาปิด auto renew ด้วยนะครับ</p>
-<p><a href="../../assets/screenshots/1.6.5%20turn%20off%20auto%20renew.jpg"><img alt="alt text" src="../../assets/screenshots/1.6.5%20turn%20off%20auto%20renew.jpg" /></a></p>
-<h2 id="task-2-add-a-custom-domain">Task 2: Add a custom domain</h2>
-<p>1. ใน Azure portal เลือก Add custom domain</p>
-<p><a href="../../assets/screenshots/1.6.6%20add%20a%20custom%20domain.jpg"><img alt="alt text" src="../../assets/screenshots/1.6.6%20add%20a%20custom%20domain.jpg" /></a></p>
-<p>copy ข้อมูล txt record ที่ระบบ generate ให้</p>
-<p><a href="../../assets/screenshots/1.6.7%20txt%20record%20info.jpg"><img alt="alt text" src="../../assets/screenshots/1.6.7%20txt%20record%20info.jpg" /></a></p>
-<p>2. แล้วนำข้อมูล TXT record ไปสร้างใน DNS zone ที่เราพึ่งจดทะเบียนไป</p>
-<p><a href="../../assets/screenshots/1.6.9%20add%20txt%20record%20to%20dns.jpg"><img alt="alt text" src="../../assets/screenshots/1.6.9%20add%20txt%20record%20to%20dns.jpg" /></a></p>
-<p>3. จากนั้นกลับไปที่ Azure portal เพื่อ verify domain</p>
-<p>รอสักครู่ แล้วค่อยกด verify หรืออาจลองกด verify หลายๆ ครั้งหน่อย จนสำเร็จ</p>
-<p><a href="../../assets/screenshots/1.6.10%20verify%20domain.jpg"><img alt="alt text" src="../../assets/screenshots/1.6.10%20verify%20domain.jpg" /></a></p>
-<p>4. เลือก domain ใหม่</p>
-<p><a href="../../assets/screenshots/1.6.11%20select%20new%20domain.jpg"><img alt="alt text" src="../../assets/screenshots/1.6.11%20select%20new%20domain.jpg" /></a></p>
-<p>แล้วแล้ว Make primary</p>
-<p><a href="../../assets/screenshots/1.6.12%20make%20primary.jpg"><img alt="alt text" src="../../assets/screenshots/1.6.12%20make%20primary.jpg" /></a></p>
-<p>ตอนนี้ domain ใหม่เป็น primary domain แล้ว</p>
-<p><a href="../../assets/screenshots/1.6.13%20verify%20the%20new%20domain%20is%20primary.jpg"><img alt="alt text" src="../../assets/screenshots/1.6.13%20verify%20the%20new%20domain%20is%20primary.jpg" /></a></p>
-<h2 id="task-3-change-users-upn-suffixes">Task 3: Change users' UPN suffixes</h2>
-<p>1. เปลี่ยน UPN suffix ของ user1</p>
-<p><a href="../../assets/screenshots/1.6.14%20user1%20properties.jpg"><img alt="alt text" src="../../assets/screenshots/1.6.14%20user1%20properties.jpg" /></a></p>
-<p>เลือก domain ใหม่ที่พึ่งเพิ่มเข้ามา</p>
-<p><a href="../../assets/screenshots/1.6.15%20change%20upn%20user1.jpg"><img alt="alt text" src="../../assets/screenshots/1.6.15%20change%20upn%20user1.jpg" /></a></p>
-<p><a href="../../assets/screenshots/1.6.15%20user1%20changed.jpg"><img alt="alt text" src="../../assets/screenshots/1.6.15%20user1%20changed.jpg" /></a></p>
-<p>2. เปลี่ยน UPN suffix ของ user2 และ user3</p>
-<p><a href="../../assets/screenshots/1.6.16%203%20users%20changed.jpg"><img alt="alt text" src="../../assets/screenshots/1.6.16%203%20users%20changed.jpg" /></a></p>
-<h2 id="task-4-testing">Task 4: Testing</h2>
-<p>1. ลอง sign in ด้วย UPN เดิม เช่น user1@your-tenant-name.onmicrosoft.com</p>
-<p>เราจะ sign in ไม่ได้</p>
-<p><a href="../../assets/screenshots/1.6.17%20test%20the%20old%20upn.jpg"><img alt="alt text" src="../../assets/screenshots/1.6.17%20test%20the%20old%20upn.jpg" /></a></p>
-<p>2. ลอง sign in อีกครั้งด้วย UPN ใหม่ user1@domain.xxx</p>
-<p><a href="../../assets/screenshots/1.6.18%20sign%20in%20with%20the%20new%20upn.jpg"><img alt="alt text" src="../../assets/screenshots/1.6.18%20sign%20in%20with%20the%20new%20upn.jpg" /></a></p>
-<p><a href="../../assets/screenshots/1.6.19%20password.jpg"><img alt="alt text" src="../../assets/screenshots/1.6.19%20password.jpg" /></a></p>
-<p>ตอนนี้ user สามารถ sign in ด้วย UPN ใหม่ได้แล้ว</p>
-<p><a href="../../assets/screenshots/1.6.20%20verify%20signed%20in.jpg"><img alt="alt text" src="../../assets/screenshots/1.6.20%20verify%20signed%20in.jpg" /></a></p>
+<p>โดยทั่วไป ผู้ใช้สามารถเปลี่ยน password ของตัวเองได้ถ้าเขาทราบ password เก่า (old password)</p>
+<p>แต่ถ้าไม่ทราบ password เก่า เขาสามารถใช้ SSPR เข้าไป reset password ของตัวเองได้ แต่เขาต้องถูก authenticate ด้วยวิธีอื่นๆ ก่อน เช่น SMS text, mobile app, หรือ email เป็นต้น</p>
+<h2 id="task-1-configure-pilot-sspr">Task 1: Configure Pilot SSPR</h2>
+<p>เลือก group ที่จะ pilot SSPR ก่อน</p>
+<p><a href="../../assets/screenshots/1.5.1%20password%20reset.jpg"><img alt="alt text" src="../../assets/screenshots/1.5.1%20password%20reset.jpg" /></a></p>
+<p>เช่น G IT</p>
+<p><a href="../../assets/screenshots/1.5.2%20pilot%20sspr.jpg"><img alt="alt text" src="../../assets/screenshots/1.5.2%20pilot%20sspr.jpg" /></a></p>
+<h2 id="task-2-review-default-sspr-settings">Task 2: Review default SSPR settings</h2>
+<p>ต่อมาเรามาดู default setting ของ SSPR กันครับ</p>
+<p>1. Authentication methods</p>
+<p>SSPR จะขอให้ user ทำ authenticadtion ด้วย method ใด method หนึ่ง จะเป็น email หรือ SMS text ก็ได้ ก่อนที่จะอนุญาตให้ผู้ใช้ตั้ง password ใหม่ของตัวเอง</p>
+<p><a href="../../assets/screenshots/1.5.3%20sspr%20authentication%20methods.jpg"><img alt="alt text" src="../../assets/screenshots/1.5.3%20sspr%20authentication%20methods.jpg" /></a></p>
+<p>2. Registration</p>
+<p>ในการ sign in ครั้งถัดไป user ที่ถูก enable SSPR จะถูกระบบบังคับให้ register ข้อมูลที่จำเป็นสำหรับทำ SSPR เช่น ให้ระบุเบอร์โทรศัพท์ที่จะให้ SSPR ส่ง SMS text ไปหา</p>
+<p><a href="../../assets/screenshots/1.5.4%20sspr%20registration.jpg"><img alt="alt text" src="../../assets/screenshots/1.5.4%20sspr%20registration.jpg" /></a></p>
+<p>3. Notification</p>
+<p>ให้แจ้ง user เมื่อ password ถูก reset</p>
+<p><a href="../../assets/screenshots/1.5.5%20sspr%20notifications.jpg"><img alt="alt text" src="../../assets/screenshots/1.5.5%20sspr%20notifications.jpg" /></a></p>
+<p>4. On-premises integration</p>
+<p>ยังไม่มีการ enable password writeback กลับไปยัง on-premises AD DS</p>
+<p><a href="../../assets/screenshots/1.5.6%20sspr%20onprem%20integration.jpg"><img alt="alt text" src="../../assets/screenshots/1.5.6%20sspr%20onprem%20integration.jpg" /></a></p>
+<p>ตอนนี้ SSPR พร้อมใช้งานกับ pilot user  แล้ว ในหัวข้อถัดไปเรามาทดสอบกันต่อครับ</p>
+<h2 id="task-3-test-user-registration">Task 3: Test user registration</h2>
+<p>1. ลอง sign out user1</p>
+<p><a href="../../assets/screenshots/1.5.7%20user1%20sign%20out.jpg"><img alt="alt text" src="../../assets/screenshots/1.5.7%20user1%20sign%20out.jpg" /></a></p>
+<p>แล้ว sign in ใหม่</p>
+<p><a href="../../assets/screenshots/1.5.8%20user1%20sign%20in%20again.jpg"><img alt="alt text" src="../../assets/screenshots/1.5.8%20user1%20sign%20in%20again.jpg" /></a></p>
+<p>2. ระบบจะขอให้เราทำ registration</p>
+<p><a href="../../assets/screenshots/1.5.9%20user1%20sign%20in%20again%202.jpg"><img alt="alt text" src="../../assets/screenshots/1.5.9%20user1%20sign%20in%20again%202.jpg" /></a></p>
+<p>กรอกเบอร์โทรศัพท์ของ user1 ที่จะใช้รับ SMS text (ให้ระบุเบอร์โทรของเรา)</p>
+<p>แล้วทำขั้นตอนต่างๆ ต่อไปเรื่อยๆ จนเสร็จ</p>
+<p><a href="../../assets/screenshots/1.5.10%20sspr%20user1%20registeration%201.jpg"><img alt="alt text" src="../../assets/screenshots/1.5.10%20sspr%20user1%20registeration%201.jpg" /></a></p>
+<p><a href="../../assets/screenshots/1.5.11%20sspr%20user1%20registeration%202.jpg"><img alt="alt text" src="../../assets/screenshots/1.5.11%20sspr%20user1%20registeration%202.jpg" /></a></p>
+<p>ตอนนี้เรา register ข้อมุลที่ระบบขอเรียบร้อยแล้ว</p>
+<p><a href="../../assets/screenshots/1.5.12%20sspr%20user1%20registeration%203.jpg"><img alt="alt text" src="../../assets/screenshots/1.5.12%20sspr%20user1%20registeration%203.jpg" /></a></p>
+<p><a href="../../assets/screenshots/1.5.13%20sspr%20user1%20registeration%204.jpg"><img alt="alt text" src="../../assets/screenshots/1.5.13%20sspr%20user1%20registeration%204.jpg" /></a></p>
+<p>3. sign in อีกครั้ง</p>
+<p><a href="../../assets/screenshots/1.5.14%20sign%20in%20again.jpg"><img alt="alt text" src="../../assets/screenshots/1.5.14%20sign%20in%20again.jpg" /></a></p>
+<p><a href="../../assets/screenshots/1.5.15%20sign%20in%20again.jpg"><img alt="alt text" src="../../assets/screenshots/1.5.15%20sign%20in%20again.jpg" /></a></p>
+<p>4. แล้ว sign out</p>
+<p><a href="../../assets/screenshots/1.5.16%20sign%20out.jpg"><img alt="alt text" src="../../assets/screenshots/1.5.16%20sign%20out.jpg" /></a></p>
+<p>จากนั้น เราไปลองทดสอบ reset password ของ user1 ผ่าน SSPR กันครับ</p>
+<h2 id="task-4-test-password-reset">Task 4: Test password reset</h2>
+<p>1. ลอง sign in ด้วย user1 แต่ไม่ต้องใส่ password</p>
+<p>ให้เรากด forgot my password แทน</p>
+<p><a href="../../assets/screenshots/1.5.17%20forgot%20password.jpg"><img alt="alt text" src="../../assets/screenshots/1.5.17%20forgot%20password.jpg" /></a></p>
+<p>2. แล้วเริ่มกระบวณการ reset password</p>
+<p><a href="../../assets/screenshots/1.5.18%20forgot%20password%202.jpg"><img alt="alt text" src="../../assets/screenshots/1.5.18%20forgot%20password%202.jpg" /></a></p>
+<p><a href="../../assets/screenshots/1.5.19%20forgot%20password%203.jpg"><img alt="alt text" src="../../assets/screenshots/1.5.19%20forgot%20password%203.jpg" /></a></p>
+<p><a href="../../assets/screenshots/1.5.20%20forgot%20password%204.jpg"><img alt="alt text" src="../../assets/screenshots/1.5.20%20forgot%20password%204.jpg" /></a></p>
+<p>ตั้ง password ใหม่ (แต่ password policy ใน Entra ID อาจทำให้ตั้งยากหน่อย)</p>
+<p><a href="../../assets/screenshots/1.5.21%20set%20new%20password.jpg"><img alt="alt text" src="../../assets/screenshots/1.5.21%20set%20new%20password.jpg" /></a></p>
+<p><a href="../../assets/screenshots/1.5.22%20set%20new%20password%20success.jpg"><img alt="alt text" src="../../assets/screenshots/1.5.22%20set%20new%20password%20success.jpg" /></a></p>
+<p>3. สุดท้ายลอง sign in อีกครั้งด้วย password ใหม่</p>
+<p><a href="../../assets/screenshots/1.5.22%20sign%20in%20with%20new%20password%201.jpg"><img alt="alt text" src="../../assets/screenshots/1.5.22%20sign%20in%20with%20new%20password%201.jpg" /></a></p>
+<p><a href="../../assets/screenshots/1.5.23%20sign%20in%20with%20new%20password%202.jpg"><img alt="alt text" src="../../assets/screenshots/1.5.23%20sign%20in%20with%20new%20password%202.jpg" /></a></p>
+<p><a href="../../assets/screenshots/1.5.24%20sign%20in%20with%20new%20password%203.jpg"><img alt="alt text" src="../../assets/screenshots/1.5.24%20sign%20in%20with%20new%20password%203.jpg" /></a></p>
+<p>ตอนนี้ user1 sign in ด้วย password ใหม่ได้เรียบร้อยแล้ว</p>
+<p><a href="../../assets/screenshots/1.5.25%20sign%20in%20with%20new%20password%20success.jpg"><img alt="alt text" src="../../assets/screenshots/1.5.25%20sign%20in%20with%20new%20password%20success.jpg" /></a></p>
+<h2 id="task-5-admin-verifies-logs">Task 5: Admin verifies logs</h2>
+<p>1. ในฐานะ admin</p>
+<p>เราลองหา activity Reset password (self-service) จาก audit log ดู</p>
+<p><a href="../../assets/screenshots/1.5.26%20admin%20verify%201.jpg"><img alt="alt text" src="../../assets/screenshots/1.5.26%20admin%20verify%201.jpg" /></a></p>
+<p>ลองดูข้อมูลอื่นๆ เพิ่มเติม</p>
+<p><a href="../../assets/screenshots/1.5.27%20admin%20verify%202.jpg"><img alt="alt text" src="../../assets/screenshots/1.5.27%20admin%20verify%202.jpg" /></a></p>
+<p>2. ลองเปิด user properties</p>
+<p>แล้วลองดูค่า Last password change date time เป็นต้น</p>
+<p><a href="../../assets/screenshots/1.5.28%20admin%20verify%203.jpg"><img alt="alt text" src="../../assets/screenshots/1.5.28%20admin%20verify%203.jpg" /></a></p>
 <p>...</p>
 <p><a href="https://learninthecloud.co">Learn In the Cloud</a></p>
 

@@ -8,9 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://learninthecloud/azure-playbook/Entra%20ID/Lab%204.%20Manage%20external%20users/">
+        <link rel="canonical" href="https://learninthecloud/azure-playbook/Entra%20ID/Create%20users%20and%20groups/">
       
       
+        <link rel="prev" href="./">
+      
+      
+        <link rel="next" href="../Restore%20deleted%20users/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -18,7 +22,7 @@
     
     
       
-        <title>Lab 4. Manage external users - Microsoft Azure Playbook</title>
+        <title>Create users - Microsoft Azure Playbook</title>
       
     
     
@@ -62,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#task-1-sign-in-as-a-user" class="md-skip">
+        <a href="#task-1-create-a-few-users" class="md-skip">
           Skip to content
         </a>
       
@@ -96,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Lab 4. Manage external users
+              Create users
             
           </span>
         </div>
@@ -181,11 +185,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../Lab%200.%20Create%20a%20new%20Microsoft%20Entra%20ID%20tenant/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../Create%20a%20new%20tenant/" class="md-tabs__link">
           
   
   Entra ID
@@ -320,23 +326,28 @@
       
   
   
+    
   
   
+  
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -347,7 +358,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Entra ID
@@ -361,11 +372,263 @@
   
   
     <li class="md-nav__item">
-      <a href="../Lab%200.%20Create%20a%20new%20Microsoft%20Entra%20ID%20tenant/" class="md-nav__link">
+      <a href="../Create%20a%20new%20tenant/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Basic Entra ID
+    Create a new tenant
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Create users
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Create users
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#task-1-create-a-few-users" class="md-nav__link">
+    <span class="md-ellipsis">
+      Task 1: Create a few users
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#task-2-create-a-security-group" class="md-nav__link">
+    <span class="md-ellipsis">
+      Task 2: Create a security group
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#task-3-create-a-microsoft-365-group" class="md-nav__link">
+    <span class="md-ellipsis">
+      Task 3: Create a Microsoft 365 group
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Create users
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Create users
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#task-1-create-a-few-users" class="md-nav__link">
+    <span class="md-ellipsis">
+      Task 1: Create a few users
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#task-2-create-a-security-group" class="md-nav__link">
+    <span class="md-ellipsis">
+      Task 2: Create a security group
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#task-3-create-a-microsoft-365-group" class="md-nav__link">
+    <span class="md-ellipsis">
+      Task 3: Create a Microsoft 365 group
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Restore%20deleted%20users/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Restore deleted users
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Group-based%20licensing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Group-based licensing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Invite%20guests/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Invite guests
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Add%20a%20custom%20domain/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Add a custom domain
   </span>
   
 
@@ -407,45 +670,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#task-1-sign-in-as-a-user" class="md-nav__link">
+  <a href="#task-1-create-a-few-users" class="md-nav__link">
     <span class="md-ellipsis">
-      Task 1: Sign in as a user
+      Task 1: Create a few users
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#task-2-invite-external-users" class="md-nav__link">
+  <a href="#task-2-create-a-security-group" class="md-nav__link">
     <span class="md-ellipsis">
-      Task 2: Invite external users
+      Task 2: Create a security group
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#task-3-verify-the-results" class="md-nav__link">
+  <a href="#task-3-create-a-microsoft-365-group" class="md-nav__link">
     <span class="md-ellipsis">
-      Task 3: Verify the results
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#task-4-accept-invitaions" class="md-nav__link">
-    <span class="md-ellipsis">
-      Task 4: Accept invitaions
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#task-5-verify-the-results" class="md-nav__link">
-    <span class="md-ellipsis">
-      Task 5: Verify the results
+      Task 3: Create a Microsoft 365 group
     </span>
   </a>
   
@@ -466,58 +711,43 @@
                   
 
 
-  <h1>Lab 4. Manage external users</h1>
+  <h1>Create users</h1>
 
-<p>ใน lab นี้ เรามา invite บุคคลภายนอก ให้มี account ของเขาปรากฏใน tenant ของเราบ้าง</p>
-<p>ซึ่ง password ของเขาจะถูกบริหารจัดการใน domain หรือ tenant ของเขา (ไม่ใช่ใน tenant เรา)</p>
-<h2 id="task-1-sign-in-as-a-user">Task 1: Sign in as a user</h2>
-<p>1. เราอาจจะจำ password ของ user1 ไม่ได้ ดังนั้นเราอาจจะ reset password ของ user1 เลย</p>
-<p><a href="../../assets/screenshots/1.4.1%20reset%20user1%20password.jpg"><img alt="alt text" src="../../assets/screenshots/1.4.1%20reset%20user1%20password.jpg" /></a></p>
-<p>2. Sign in ใหม่ด้วย user1</p>
-<p><a href="../../assets/screenshots/1.4.2%20sign%20in%20as%20user1.jpg"><img alt="alt text" src="../../assets/screenshots/1.4.2%20sign%20in%20as%20user1.jpg" /></a></p>
-<h2 id="task-2-invite-external-users">Task 2: Invite external users</h2>
-<p>1. ให้ user1 ลอง invite external user ดู</p>
-<p><a href="../../assets/screenshots/1.4.3%20invite%20an%20external%20user.jpg"><img alt="alt text" src="../../assets/screenshots/1.4.3%20invite%20an%20external%20user.jpg" /></a></p>
-<p>ให้เรา invite ใครก็ได้ที่ไม่ได้อยู่ใน tenant เดียวกับเรา</p>
-<p><a href="../../assets/screenshots/1.4.4%20invite%20an%20external%20user%202.jpg"><img alt="alt text" src="../../assets/screenshots/1.4.4%20invite%20an%20external%20user%202.jpg" /></a></p>
-<p>user type = guest</p>
-<p><a href="../../assets/screenshots/1.4.5%20invite%20an%20external%20user%203.jpg"><img alt="alt text" src="../../assets/screenshots/1.4.5%20invite%20an%20external%20user%203.jpg" /></a></p>
-<p>ไม่ assign role ใดๆ ให้เขา</p>
-<p><a href="../../assets/screenshots/1.4.6%20invite%20an%20external%20user%204.jpg"><img alt="alt text" src="../../assets/screenshots/1.4.6%20invite%20an%20external%20user%204.jpg" /></a></p>
-<p>แล้ว invite</p>
-<p><a href="../../assets/screenshots/1.4.7%20invite%20an%20external%20user%205.jpg"><img alt="alt text" src="../../assets/screenshots/1.4.7%20invite%20an%20external%20user%205.jpg" /></a></p>
-<p>2. invite external user คนที่ 2</p>
-<p><a href="../../assets/screenshots/1.4.8%20invite%20an%20external%20user%206.jpg"><img alt="alt text" src="../../assets/screenshots/1.4.8%20invite%20an%20external%20user%206.jpg" /></a></p>
-<p><a href="../../assets/screenshots/1.4.9%20invite%20an%20external%20user%207.jpg"><img alt="alt text" src="../../assets/screenshots/1.4.9%20invite%20an%20external%20user%207.jpg" /></a></p>
-<h2 id="task-3-verify-the-results">Task 3: Verify the results</h2>
-<p>1. ตอนนี้ user1 ได้ Invite external users เข้ามาที่ tenant ของเราแล้ว 2 คน</p>
-<p><a href="../../assets/screenshots/1.4.10%202%20external%20users.jpg"><img alt="alt text" src="../../assets/screenshots/1.4.10%202%20external%20users.jpg" /></a></p>
-<p>2. แต่ external user ที่ invite ไปยังไม่ได้ accept invitation (process จึงยังไม่เรียบร้อย)</p>
-<p><a href="../../assets/screenshots/1.4.11%20external%20user%201.jpg"><img alt="alt text" src="../../assets/screenshots/1.4.11%20external%20user%201.jpg" /></a></p>
-<p><a href="../../assets/screenshots/1.4.12%20external%20user%202.jpg"><img alt="alt text" src="../../assets/screenshots/1.4.12%20external%20user%202.jpg" /></a></p>
-<h2 id="task-4-accept-invitaions">Task 4: Accept invitaions</h2>
-<p>1. ที่ mailbox ของ external user คนที่ 1</p>
-<p>Accept invitation</p>
-<p><a href="../../assets/screenshots/1.4.13%20external%20user%201%20accept.jpg"><img alt="alt text" src="../../assets/screenshots/1.4.13%20external%20user%201%20accept.jpg" /></a></p>
-<p><a href="../../assets/screenshots/1.4.14%20external%20user%201%20accept%202.jpg"><img alt="alt text" src="../../assets/screenshots/1.4.14%20external%20user%201%20accept%202.jpg" /></a></p>
-<p><a href="../../assets/screenshots/1.4.15%20external%20user1%20accept%203.jpg"><img alt="alt text" src="../../assets/screenshots/1.4.15%20external%20user1%20accept%203.jpg" /></a></p>
-<p><a href="../../assets/screenshots/1.4.16%20external%20user1%20accept%204.jpg"><img alt="alt text" src="../../assets/screenshots/1.4.16%20external%20user1%20accept%204.jpg" /></a></p>
-<p>Accept permission requests</p>
-<p><a href="../../assets/screenshots/1.4.17%20external%20user1%20accept%205.jpg"><img alt="alt text" src="../../assets/screenshots/1.4.17%20external%20user1%20accept%205.jpg" /></a></p>
-<p>ตอนนี้ external user คนที่ 1 sign in เข้า tenant ของเราสำเร็จแล้ว</p>
-<p><a href="../../assets/screenshots/1.4.18%20external%20user1%20accept%206.jpg"><img alt="alt text" src="../../assets/screenshots/1.4.18%20external%20user1%20accept%206.jpg" /></a></p>
-<p>2. External user คนที่ 2 accept invitation</p>
-<p><a href="../../assets/screenshots/1.4.19%20external%20user2%20accept%201.jpg"><img alt="alt text" src="../../assets/screenshots/1.4.19%20external%20user2%20accept%201.jpg" /></a></p>
-<p><a href="../../assets/screenshots/1.4.20%20external%20user2%20accept%202.jpg"><img alt="alt text" src="../../assets/screenshots/1.4.20%20external%20user2%20accept%202.jpg" /></a></p>
-<p>External user คนที่ 2 ก็ sign in เข้า tenant ของเราสำเร็จแล้ว</p>
-<p><a href="../../assets/screenshots/1.4.21%20external%20user2%20accept%203.jpg"><img alt="alt text" src="../../assets/screenshots/1.4.21%20external%20user2%20accept%203.jpg" /></a></p>
-<h2 id="task-5-verify-the-results">Task 5: Verify the results</h2>
-<p>1. ตอนนี้ external user ทั้ง 2 คน accept invitation แล้ว</p>
-<p><a href="../../assets/screenshots/1.4.22%20review%20external%20user1.jpg"><img alt="alt text" src="../../assets/screenshots/1.4.22%20review%20external%20user1.jpg" /></a></p>
-<p><a href="../../assets/screenshots/1.4.23%20review%20external%20user2.jpg"><img alt="alt text" src="../../assets/screenshots/1.4.23%20review%20external%20user2.jpg" /></a></p>
-<p>2. ลองนำ external user ไปใช้งาน</p>
-<p>เช่น ลอง add external user เข้า G IT group ดู</p>
-<p><a href="../../assets/screenshots/1.4.24%20add%20external%20user1%20to%20a%20group.jpg"><img alt="alt text" src="../../assets/screenshots/1.4.24%20add%20external%20user1%20to%20a%20group.jpg" /></a></p>
+<p>ในหัวข้อนี้ เราจะสร้าง user และ group เพื่อใช้งาน</p>
+<h2 id="task-1-create-a-few-users">Task 1: Create a few users</h2>
+<p>1. สร้าง User1</p>
+<p><a href="../../assets/screenshots/1.1%20create%20a%20new%20user.jpg"><img alt="alt text" src="../../assets/screenshots/1.1%20create%20a%20new%20user.jpg" /></a></p>
+<p><a href="../../assets/screenshots/1.1%20user1.jpg"><img alt="alt text" src="../../assets/screenshots/1.1%20user1.jpg" /></a></p>
+<p>Department = IT</p>
+<p><a href="../../assets/screenshots/1.1%20user1%20department.jpg"><img alt="alt text" src="../../assets/screenshots/1.1%20user1%20department.jpg" /></a></p>
+<p>ไม่ assign role ใดๆ</p>
+<p><a href="../../assets/screenshots/1.1%20user1%20no%20role.jpg"><img alt="alt text" src="../../assets/screenshots/1.1%20user1%20no%20role.jpg" /></a></p>
+<p>แล้วกด Create</p>
+<p><a href="../../assets/screenshots/1.1%20user1%20create.jpg"><img alt="alt text" src="../../assets/screenshots/1.1%20user1%20create.jpg" /></a></p>
+<p>2. สร้าง User2</p>
+<p><a href="../../assets/screenshots/1.1%20create%20user2.jpg"><img alt="alt text" src="../../assets/screenshots/1.1%20create%20user2.jpg" /></a></p>
+<p>Department = HR</p>
+<p><a href="../../assets/screenshots/1.1%20user2%20department.jpg"><img alt="alt text" src="../../assets/screenshots/1.1%20user2%20department.jpg" /></a></p>
+<p>3. สร้าง User3</p>
+<p><a href="../../assets/screenshots/1.1%20create%20user3.jpg"><img alt="alt text" src="../../assets/screenshots/1.1%20create%20user3.jpg" /></a></p>
+<p>Department = HR</p>
+<p><a href="../../assets/screenshots/1.1%20user3%20department.jpg"><img alt="alt text" src="../../assets/screenshots/1.1%20user3%20department.jpg" /></a></p>
+<p>4. ตรวจสอบว่า user ใหม่ทั้ง 3 accounts ถูกสร้างแล้ว</p>
+<p><a href="../../assets/screenshots/1.1%20click%20users%20to%20review.jpg"><img alt="alt text" src="../../assets/screenshots/1.1%20click%20users%20to%20review.jpg" /></a></p>
+<p><a href="../../assets/screenshots/1.1%20review%20new%20users%20are%20created.jpg"><img alt="alt text" src="../../assets/screenshots/1.1%20review%20new%20users%20are%20created.jpg" /></a></p>
+<h2 id="task-2-create-a-security-group">Task 2: Create a security group</h2>
+<p>1. สร้าง security group</p>
+<p><a href="../../assets/screenshots/1.1%20create%20a%20new%20group.jpg"><img alt="alt text" src="../../assets/screenshots/1.1%20create%20a%20new%20group.jpg" /></a></p>
+<p>และเพิ่ม user1 เข้าไปเป็นสมาชิก</p>
+<p><a href="../../assets/screenshots/1.1%20security%20group%20g%20it%20and%20add%20user1.jpg"><img alt="alt text" src="../../assets/screenshots/1.1%20security%20group%20g%20it%20and%20add%20user1.jpg" /></a></p>
+<h2 id="task-3-create-a-microsoft-365-group">Task 3: Create a Microsoft 365 group</h2>
+<p>1. สร้าง Microsoft 365 group</p>
+<p><a href="../../assets/screenshots/1.1%20microsoft%20365%20g%20it%20365%20and%20add%20user1.jpg"><img alt="alt text" src="../../assets/screenshots/1.1%20microsoft%20365%20g%20it%20365%20and%20add%20user1.jpg" /></a></p>
+<p>และเพิ่ม user1 เข้าไปเป็นสมาชิก</p>
+<p><a href="../../assets/screenshots/1.1%20microsoft%20365%20g%20it%20365%20and%20add%20user1%202.jpg"><img alt="alt text" src="../../assets/screenshots/1.1%20microsoft%20365%20g%20it%20365%20and%20add%20user1%202.jpg" /></a></p>
+<p>2. ตรวจสอบว่าทั้ง 2 groups ถูกสร้างแล้ว</p>
+<p><a href="../../assets/screenshots/1.1%20review%20groups.jpg"><img alt="alt text" src="../../assets/screenshots/1.1%20review%20groups.jpg" /></a></p>
+<p><a href="../../assets/screenshots/1.1%202%20groups%20are%20created.jpg"><img alt="alt text" src="../../assets/screenshots/1.1%202%20groups%20are%20created.jpg" /></a></p>
 <p>...</p>
 <p><a href="https://learninthecloud.co">Learn In the Cloud</a></p>
 
