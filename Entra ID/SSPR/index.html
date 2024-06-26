@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#task-1-configure-pilot-sspr" class="md-skip">
+        <a href="#1-configure-pilot-sspr" class="md-skip">
           Skip to content
         </a>
       
@@ -414,7 +414,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Group-based%20licensing/" class="md-nav__link">
+      <a href="../Group-based%20licensing%20with%20a%20dynamic%20user%20group/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -440,6 +440,27 @@
   
   <span class="md-ellipsis">
     Invite guests
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../SSPR.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Self-service Password Reset (SSPR)
   </span>
   
 
@@ -502,45 +523,45 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#task-1-configure-pilot-sspr" class="md-nav__link">
+  <a href="#1-configure-pilot-sspr" class="md-nav__link">
     <span class="md-ellipsis">
-      Task 1: Configure Pilot SSPR
+      1. Configure Pilot SSPR
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#task-2-review-default-sspr-settings" class="md-nav__link">
+  <a href="#2-review-default-sspr-settings" class="md-nav__link">
     <span class="md-ellipsis">
-      Task 2: Review default SSPR settings
+      2. Review default SSPR settings
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#task-3-test-user-registration" class="md-nav__link">
+  <a href="#3-test-user-registration" class="md-nav__link">
     <span class="md-ellipsis">
-      Task 3: Test user registration
+      3. Test user registration
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#task-4-test-password-reset" class="md-nav__link">
+  <a href="#4-test-password-reset" class="md-nav__link">
     <span class="md-ellipsis">
-      Task 4: Test password reset
+      4. Test password reset
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#task-5-admin-verifies-logs" class="md-nav__link">
+  <a href="#5-admin-verifies-logs" class="md-nav__link">
     <span class="md-ellipsis">
-      Task 5: Admin verifies logs
+      5. Admin verifies logs
     </span>
   </a>
   
@@ -565,12 +586,12 @@
 
 <p>โดยทั่วไป ผู้ใช้สามารถเปลี่ยน password ของตัวเองได้ถ้าเขาทราบ password เก่า (old password)</p>
 <p>แต่ถ้าไม่ทราบ password เก่า เขาสามารถใช้ SSPR เข้าไป reset password ของตัวเองได้ แต่เขาต้องถูก authenticate ด้วยวิธีอื่นๆ ก่อน เช่น SMS text, mobile app, หรือ email เป็นต้น</p>
-<h2 id="task-1-configure-pilot-sspr">Task 1: Configure Pilot SSPR</h2>
+<h2 id="1-configure-pilot-sspr">1. Configure Pilot SSPR</h2>
 <p>เลือก group ที่จะ pilot SSPR ก่อน</p>
 <p><a href="../../assets/screenshots/1.5.1%20password%20reset.jpg"><img alt="alt text" src="../../assets/screenshots/1.5.1%20password%20reset.jpg" /></a></p>
 <p>เช่น G IT</p>
 <p><a href="../../assets/screenshots/1.5.2%20pilot%20sspr.jpg"><img alt="alt text" src="../../assets/screenshots/1.5.2%20pilot%20sspr.jpg" /></a></p>
-<h2 id="task-2-review-default-sspr-settings">Task 2: Review default SSPR settings</h2>
+<h2 id="2-review-default-sspr-settings">2. Review default SSPR settings</h2>
 <p>ต่อมาเรามาดู default setting ของ SSPR กันครับ</p>
 <p>1. Authentication methods</p>
 <p>SSPR จะขอให้ user ทำ authenticadtion ด้วย method ใด method หนึ่ง จะเป็น email หรือ SMS text ก็ได้ ก่อนที่จะอนุญาตให้ผู้ใช้ตั้ง password ใหม่ของตัวเอง</p>
@@ -585,7 +606,7 @@
 <p>ยังไม่มีการ enable password writeback กลับไปยัง on-premises AD DS</p>
 <p><a href="../../assets/screenshots/1.5.6%20sspr%20onprem%20integration.jpg"><img alt="alt text" src="../../assets/screenshots/1.5.6%20sspr%20onprem%20integration.jpg" /></a></p>
 <p>ตอนนี้ SSPR พร้อมใช้งานกับ pilot user  แล้ว ในหัวข้อถัดไปเรามาทดสอบกันต่อครับ</p>
-<h2 id="task-3-test-user-registration">Task 3: Test user registration</h2>
+<h2 id="3-test-user-registration">3. Test user registration</h2>
 <p>1. ลอง sign out user1</p>
 <p><a href="../../assets/screenshots/1.5.7%20user1%20sign%20out.jpg"><img alt="alt text" src="../../assets/screenshots/1.5.7%20user1%20sign%20out.jpg" /></a></p>
 <p>แล้ว sign in ใหม่</p>
@@ -605,7 +626,7 @@
 <p>4. แล้ว sign out</p>
 <p><a href="../../assets/screenshots/1.5.16%20sign%20out.jpg"><img alt="alt text" src="../../assets/screenshots/1.5.16%20sign%20out.jpg" /></a></p>
 <p>จากนั้น เราไปลองทดสอบ reset password ของ user1 ผ่าน SSPR กันครับ</p>
-<h2 id="task-4-test-password-reset">Task 4: Test password reset</h2>
+<h2 id="4-test-password-reset">4. Test password reset</h2>
 <p>1. ลอง sign in ด้วย user1 แต่ไม่ต้องใส่ password</p>
 <p>ให้เรากด forgot my password แทน</p>
 <p><a href="../../assets/screenshots/1.5.17%20forgot%20password.jpg"><img alt="alt text" src="../../assets/screenshots/1.5.17%20forgot%20password.jpg" /></a></p>
@@ -622,7 +643,7 @@
 <p><a href="../../assets/screenshots/1.5.24%20sign%20in%20with%20new%20password%203.jpg"><img alt="alt text" src="../../assets/screenshots/1.5.24%20sign%20in%20with%20new%20password%203.jpg" /></a></p>
 <p>ตอนนี้ user1 sign in ด้วย password ใหม่ได้เรียบร้อยแล้ว</p>
 <p><a href="../../assets/screenshots/1.5.25%20sign%20in%20with%20new%20password%20success.jpg"><img alt="alt text" src="../../assets/screenshots/1.5.25%20sign%20in%20with%20new%20password%20success.jpg" /></a></p>
-<h2 id="task-5-admin-verifies-logs">Task 5: Admin verifies logs</h2>
+<h2 id="5-admin-verifies-logs">5. Admin verifies logs</h2>
 <p>1. ในฐานะ admin</p>
 <p>เราลองหา activity Reset password (self-service) จาก audit log ดู</p>
 <p><a href="../../assets/screenshots/1.5.26%20admin%20verify%201.jpg"><img alt="alt text" src="../../assets/screenshots/1.5.26%20admin%20verify%201.jpg" /></a></p>

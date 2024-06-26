@@ -11,7 +11,7 @@
         <link rel="canonical" href="https://learninthecloud/azure-playbook/Entra%20ID/Invite%20guests/">
       
       
-        <link rel="prev" href="../Group-based%20licensing/">
+        <link rel="prev" href="../Group-based%20licensing%20with%20a%20dynamic%20user%20group/">
       
       
         <link rel="next" href="../Add%20a%20custom%20domain/">
@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#task-1-sign-in-as-a-user" class="md-skip">
+        <a href="#1-sign-in-as-a-user" class="md-skip">
           Skip to content
         </a>
       
@@ -425,7 +425,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Group-based%20licensing/" class="md-nav__link">
+      <a href="../Group-based%20licensing%20with%20a%20dynamic%20user%20group/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -488,45 +488,45 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#task-1-sign-in-as-a-user" class="md-nav__link">
+  <a href="#1-sign-in-as-a-user" class="md-nav__link">
     <span class="md-ellipsis">
-      Task 1: Sign in as a user
+      1. Sign in as a user
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#task-2-invite-external-users" class="md-nav__link">
+  <a href="#2-invite-external-users" class="md-nav__link">
     <span class="md-ellipsis">
-      Task 2: Invite external users
+      2. Invite external users
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#task-3-verify-the-results" class="md-nav__link">
+  <a href="#3-verify-the-results" class="md-nav__link">
     <span class="md-ellipsis">
-      Task 3: Verify the results
+      3. Verify the results
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#task-4-accept-invitaions" class="md-nav__link">
+  <a href="#4-accept-invitaions" class="md-nav__link">
     <span class="md-ellipsis">
-      Task 4: Accept invitaions
+      4. Accept invitaions
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#task-5-verify-the-results" class="md-nav__link">
+  <a href="#5-verify-the-results" class="md-nav__link">
     <span class="md-ellipsis">
-      Task 5: Verify the results
+      5. Verify the results
     </span>
   </a>
   
@@ -536,6 +536,27 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../SSPR.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Self-service Password Reset (SSPR)
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -594,45 +615,45 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#task-1-sign-in-as-a-user" class="md-nav__link">
+  <a href="#1-sign-in-as-a-user" class="md-nav__link">
     <span class="md-ellipsis">
-      Task 1: Sign in as a user
+      1. Sign in as a user
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#task-2-invite-external-users" class="md-nav__link">
+  <a href="#2-invite-external-users" class="md-nav__link">
     <span class="md-ellipsis">
-      Task 2: Invite external users
+      2. Invite external users
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#task-3-verify-the-results" class="md-nav__link">
+  <a href="#3-verify-the-results" class="md-nav__link">
     <span class="md-ellipsis">
-      Task 3: Verify the results
+      3. Verify the results
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#task-4-accept-invitaions" class="md-nav__link">
+  <a href="#4-accept-invitaions" class="md-nav__link">
     <span class="md-ellipsis">
-      Task 4: Accept invitaions
+      4. Accept invitaions
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#task-5-verify-the-results" class="md-nav__link">
+  <a href="#5-verify-the-results" class="md-nav__link">
     <span class="md-ellipsis">
-      Task 5: Verify the results
+      5. Verify the results
     </span>
   </a>
   
@@ -657,12 +678,12 @@
 
 <p>ใน lab นี้ เรามา invite บุคคลภายนอก ให้มี account ของเขาปรากฏใน tenant ของเราบ้าง</p>
 <p>ซึ่ง password ของเขาจะถูกบริหารจัดการใน domain หรือ tenant ของเขา (ไม่ใช่ใน tenant เรา)</p>
-<h2 id="task-1-sign-in-as-a-user">Task 1: Sign in as a user</h2>
+<h2 id="1-sign-in-as-a-user">1. Sign in as a user</h2>
 <p>1. เราอาจจะจำ password ของ user1 ไม่ได้ ดังนั้นเราอาจจะ reset password ของ user1 เลย</p>
 <p><a href="../../assets/screenshots/1.4.1%20reset%20user1%20password.jpg"><img alt="alt text" src="../../assets/screenshots/1.4.1%20reset%20user1%20password.jpg" /></a></p>
 <p>2. Sign in ใหม่ด้วย user1</p>
 <p><a href="../../assets/screenshots/1.4.2%20sign%20in%20as%20user1.jpg"><img alt="alt text" src="../../assets/screenshots/1.4.2%20sign%20in%20as%20user1.jpg" /></a></p>
-<h2 id="task-2-invite-external-users">Task 2: Invite external users</h2>
+<h2 id="2-invite-external-users">2. Invite external users</h2>
 <p>1. ให้ user1 ลอง invite external user ดู</p>
 <p><a href="../../assets/screenshots/1.4.3%20invite%20an%20external%20user.jpg"><img alt="alt text" src="../../assets/screenshots/1.4.3%20invite%20an%20external%20user.jpg" /></a></p>
 <p>ให้เรา invite ใครก็ได้ที่ไม่ได้อยู่ใน tenant เดียวกับเรา</p>
@@ -676,13 +697,13 @@
 <p>2. invite external user คนที่ 2</p>
 <p><a href="../../assets/screenshots/1.4.8%20invite%20an%20external%20user%206.jpg"><img alt="alt text" src="../../assets/screenshots/1.4.8%20invite%20an%20external%20user%206.jpg" /></a></p>
 <p><a href="../../assets/screenshots/1.4.9%20invite%20an%20external%20user%207.jpg"><img alt="alt text" src="../../assets/screenshots/1.4.9%20invite%20an%20external%20user%207.jpg" /></a></p>
-<h2 id="task-3-verify-the-results">Task 3: Verify the results</h2>
+<h2 id="3-verify-the-results">3. Verify the results</h2>
 <p>1. ตอนนี้ user1 ได้ Invite external users เข้ามาที่ tenant ของเราแล้ว 2 คน</p>
 <p><a href="../../assets/screenshots/1.4.10%202%20external%20users.jpg"><img alt="alt text" src="../../assets/screenshots/1.4.10%202%20external%20users.jpg" /></a></p>
 <p>2. แต่ external user ที่ invite ไปยังไม่ได้ accept invitation (process จึงยังไม่เรียบร้อย)</p>
 <p><a href="../../assets/screenshots/1.4.11%20external%20user%201.jpg"><img alt="alt text" src="../../assets/screenshots/1.4.11%20external%20user%201.jpg" /></a></p>
 <p><a href="../../assets/screenshots/1.4.12%20external%20user%202.jpg"><img alt="alt text" src="../../assets/screenshots/1.4.12%20external%20user%202.jpg" /></a></p>
-<h2 id="task-4-accept-invitaions">Task 4: Accept invitaions</h2>
+<h2 id="4-accept-invitaions">4. Accept invitaions</h2>
 <p>1. ที่ mailbox ของ external user คนที่ 1</p>
 <p>Accept invitation</p>
 <p><a href="../../assets/screenshots/1.4.13%20external%20user%201%20accept.jpg"><img alt="alt text" src="../../assets/screenshots/1.4.13%20external%20user%201%20accept.jpg" /></a></p>
@@ -698,7 +719,7 @@
 <p><a href="../../assets/screenshots/1.4.20%20external%20user2%20accept%202.jpg"><img alt="alt text" src="../../assets/screenshots/1.4.20%20external%20user2%20accept%202.jpg" /></a></p>
 <p>External user คนที่ 2 ก็ sign in เข้า tenant ของเราสำเร็จแล้ว</p>
 <p><a href="../../assets/screenshots/1.4.21%20external%20user2%20accept%203.jpg"><img alt="alt text" src="../../assets/screenshots/1.4.21%20external%20user2%20accept%203.jpg" /></a></p>
-<h2 id="task-5-verify-the-results">Task 5: Verify the results</h2>
+<h2 id="5-verify-the-results">5. Verify the results</h2>
 <p>1. ตอนนี้ external user ทั้ง 2 คน accept invitation แล้ว</p>
 <p><a href="../../assets/screenshots/1.4.22%20review%20external%20user1.jpg"><img alt="alt text" src="../../assets/screenshots/1.4.22%20review%20external%20user1.jpg" /></a></p>
 <p><a href="../../assets/screenshots/1.4.23%20review%20external%20user2.jpg"><img alt="alt text" src="../../assets/screenshots/1.4.23%20review%20external%20user2.jpg" /></a></p>

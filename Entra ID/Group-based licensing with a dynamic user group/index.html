@@ -8,7 +8,7 @@
       
       
       
-        <link rel="canonical" href="https://learninthecloud/azure-playbook/Entra%20ID/Group-based%20licensing/">
+        <link rel="canonical" href="https://learninthecloud/azure-playbook/Entra%20ID/Group-based%20licensing%20with%20a%20dynamic%20user%20group/">
       
       
         <link rel="prev" href="../Restore%20deleted%20users/">
@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#task-1-sign-up-a-sample-license" class="md-skip">
+        <a href="#1-sign-up-a-sample-license" class="md-skip">
           Skip to content
         </a>
       
@@ -467,27 +467,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#task-1-sign-up-a-sample-license" class="md-nav__link">
+  <a href="#1-sign-up-a-sample-license" class="md-nav__link">
     <span class="md-ellipsis">
-      Task 1: Sign up a sample license
+      1. Sign up a sample license
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#task-2-create-a-new-dynamic-group" class="md-nav__link">
+  <a href="#2-create-a-new-dynamic-group" class="md-nav__link">
     <span class="md-ellipsis">
-      Task 2: Create a new dynamic group
+      2. Create a new dynamic group
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#task-3-group-based-licensing" class="md-nav__link">
+  <a href="#3-group-based-licensing" class="md-nav__link">
     <span class="md-ellipsis">
-      Task 3: Group based licensing
+      3. Group based licensing
     </span>
   </a>
   
@@ -514,6 +514,27 @@
   
   <span class="md-ellipsis">
     Invite guests
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../SSPR.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Self-service Password Reset (SSPR)
   </span>
   
 
@@ -576,27 +597,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#task-1-sign-up-a-sample-license" class="md-nav__link">
+  <a href="#1-sign-up-a-sample-license" class="md-nav__link">
     <span class="md-ellipsis">
-      Task 1: Sign up a sample license
+      1. Sign up a sample license
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#task-2-create-a-new-dynamic-group" class="md-nav__link">
+  <a href="#2-create-a-new-dynamic-group" class="md-nav__link">
     <span class="md-ellipsis">
-      Task 2: Create a new dynamic group
+      2. Create a new dynamic group
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#task-3-group-based-licensing" class="md-nav__link">
+  <a href="#3-group-based-licensing" class="md-nav__link">
     <span class="md-ellipsis">
-      Task 3: Group based licensing
+      3. Group based licensing
     </span>
   </a>
   
@@ -621,7 +642,7 @@
 
 <p>เราจะลอง assign license ให้กับ user ใน Entra ID tenant ของเราดู แต่เราต้องสมัคร trail license อะไรก็ได้สักตัวนึงก่อน</p>
 <p>ในตัวอย่างนี้เราจะสมัคร Entra ID P2 trial กันนะครับ</p>
-<h2 id="task-1-sign-up-a-sample-license">Task 1: Sign up a sample license</h2>
+<h2 id="1-sign-up-a-sample-license">1. Sign up a sample license</h2>
 <p>1. รีวิว Entra ID license</p>
 <p>ตอนนี้เราใช้ Microsoft Entra ID Free อยู่</p>
 <p><a href="../../assets/screenshots/1.3.1%20view%20licenses.jpg"><img alt="alt text" src="../../assets/screenshots/1.3.1%20view%20licenses.jpg" /></a></p>
@@ -666,7 +687,7 @@
 <p><a href="../../assets/screenshots/1.3.24%20got%20the%20entra%20id%20p2%20license.jpg"><img alt="alt text" src="../../assets/screenshots/1.3.24%20got%20the%20entra%20id%20p2%20license.jpg" /></a></p>
 <p>ลองดูใน Azure portal อีกที่นึง</p>
 <p><a href="../../assets/screenshots/1.3.25%20view%20the%20license%20in%20azure%20portal.jpg"><img alt="alt text" src="../../assets/screenshots/1.3.25%20view%20the%20license%20in%20azure%20portal.jpg" /></a></p>
-<h2 id="task-2-create-a-new-dynamic-group">Task 2: Create a new dynamic group</h2>
+<h2 id="2-create-a-new-dynamic-group">2. Create a new dynamic group</h2>
 <p>1. สร้าง dynamic user group</p>
 <p>เช่น ชื่อ G HR</p>
 <p><a href="../../assets/screenshots/1.3.26%20new%20group.jpg"><img alt="alt text" src="../../assets/screenshots/1.3.26%20new%20group.jpg" /></a></p>
@@ -683,7 +704,7 @@
 <p><a href="../../assets/screenshots/1.3.31%20review%20the%20dynamic%20group%202.jpg"><img alt="alt text" src="../../assets/screenshots/1.3.31%20review%20the%20dynamic%20group%202.jpg" /></a></p>
 <p><a href="../../assets/screenshots/1.3.32%20review%20members.jpg"><img alt="alt text" src="../../assets/screenshots/1.3.32%20review%20members.jpg" /></a></p>
 <p>ตอนนี้เรามี dynamic group แล้ว ดังนั้นเราลองไปใช้ประโยชน์จาก dynamic user group กันครับ</p>
-<h2 id="task-3-group-based-licensing">Task 3: Group based licensing</h2>
+<h2 id="3-group-based-licensing">3. Group based licensing</h2>
 <p>เราจะลองใช้ประโยชน์จาก dynamic user group เพื่อให้ user ในแผนก HR ถูก assign license โดยอัตโนมัติผ่าน group-based licensing feature</p>
 <p>1. ไปที่ dynamic group ที่สร้างขึ้นก่อนหน้านี้</p>
 <p>แล้ว assign license</p>
