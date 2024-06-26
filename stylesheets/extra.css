@@ -1,8 +1,7 @@
 p {
     font-size: 16px;
-  }
+}
 
-  .md-typeset h1,
-  .md-typeset h2 {
+.md-typeset h1, .md-typeset h2 {
     font-weight: bold;
-  }
+}
