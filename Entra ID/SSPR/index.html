@@ -11,6 +11,10 @@
         <link rel="canonical" href="https://learninthecloud/azure-playbook/Entra%20ID/SSPR/">
       
       
+        <link rel="prev" href="../Invite%20guests/">
+      
+      
+        <link rel="next" href="../Add%20a%20custom%20domain/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -18,7 +22,7 @@
     
     
       
-        <title>SSPR - Microsoft Azure Playbook</title>
+        <title>Self-service Password Reset (SSPR) - Microsoft Azure Playbook</title>
       
     
     
@@ -96,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              SSPR
+              Self-service Password Reset (SSPR)
             
           </span>
         </div>
@@ -197,10 +201,12 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
+      <li class="md-tabs__item md-tabs__item--active">
         <a href="../Create%20a%20new%20tenant/" class="md-tabs__link">
           
   
@@ -289,23 +295,28 @@
       
   
   
+    
   
   
+  
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -316,7 +327,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Entra ID
@@ -453,10 +464,28 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../Enta ID/SSPR.md" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Self-service Password Reset (SSPR)
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -465,6 +494,69 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-configure-pilot-sspr" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Configure Pilot SSPR
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-review-default-sspr-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Review default SSPR settings
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-test-user-registration" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Test user registration
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-test-password-reset" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Test password reset
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-admin-verifies-logs" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Admin verifies logs
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -582,7 +674,7 @@
                   
 
 
-  <h1>SSPR</h1>
+  <h1>Self-service Password Reset (SSPR)</h1>
 
 <p>โดยทั่วไป ผู้ใช้สามารถเปลี่ยน password ของตัวเองได้ถ้าเขาทราบ password เก่า (old password)</p>
 <p>แต่ถ้าไม่ทราบ password เก่า เขาสามารถใช้ SSPR เข้าไป reset password ของตัวเองได้ แต่เขาต้องถูก authenticate ด้วยวิธีอื่นๆ ก่อน เช่น SMS text, mobile app, หรือ email เป็นต้น</p>
