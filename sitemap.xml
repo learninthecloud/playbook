@@ -21,7 +21,12 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://learninthecloud/azure-playbook/Entra%20ID/Create%20users%20and%20groups/</loc>
+         <loc>https://learninthecloud/azure-playbook/Entra%20ID/Create%20groups/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learninthecloud/azure-playbook/Entra%20ID/Create%20users/</loc>
          <lastmod>2024-06-26</lastmod>
          <changefreq>daily</changefreq>
     </url>

@@ -8,25 +8,25 @@
       
       
       
-        <link rel="canonical" href="https://learninthecloud/azure-playbook/Prerequisites/">
+        <link rel="canonical" href="https://learninthecloud/azure-playbook/Entra%20ID/Create%20users/">
       
       
-        <link rel="prev" href="..">
+        <link rel="prev" href="../Create%20a%20new%20tenant/">
       
       
-        <link rel="next" href="../Entra%20ID/Create%20a%20new%20tenant/">
+        <link rel="next" href="../Create%20groups/">
       
       
-      <link rel="icon" href="../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.24">
     
     
       
-        <title>Prerequisites - Microsoft Azure Playbook</title>
+        <title>Create users - Microsoft Azure Playbook</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.6543a935.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6543a935.min.css">
       
       
 
@@ -45,9 +45,9 @@
       
     
     
-      <link rel="stylesheet" href="../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#azure-free-account" class="md-skip">
+        <a href="#task-1-create-a-few-users" class="md-skip">
           Skip to content
         </a>
       
@@ -80,7 +80,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="Microsoft Azure Playbook" class="md-header__button md-logo" aria-label="Microsoft Azure Playbook" data-md-component="logo">
+    <a href="../.." title="Microsoft Azure Playbook" class="md-header__button md-logo" aria-label="Microsoft Azure Playbook" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -100,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Prerequisites
+              Create users
             
           </span>
         </div>
@@ -169,7 +169,7 @@
   
   
     <li class="md-tabs__item">
-      <a href=".." class="md-tabs__link">
+      <a href="../.." class="md-tabs__link">
         
   
     
@@ -184,11 +184,9 @@
         
   
   
-    
   
-  
-    <li class="md-tabs__item md-tabs__item--active">
-      <a href="./" class="md-tabs__link">
+    <li class="md-tabs__item">
+      <a href="../../Prerequisites/" class="md-tabs__link">
         
   
     
@@ -203,11 +201,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../Entra%20ID/Create%20a%20new%20tenant/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../Create%20a%20new%20tenant/" class="md-tabs__link">
           
   
   Entra ID
@@ -240,7 +240,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Microsoft Azure Playbook" class="md-nav__button md-logo" aria-label="Microsoft Azure Playbook" data-md-component="logo">
+    <a href="../.." title="Microsoft Azure Playbook" class="md-nav__button md-logo" aria-label="Microsoft Azure Playbook" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -258,7 +258,7 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -275,6 +275,90 @@
       
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Prerequisites/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Prerequisites
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Entra ID
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Entra ID
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Create%20a%20new%20tenant/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Create a new tenant
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -289,7 +373,7 @@
           
   
   <span class="md-ellipsis">
-    Prerequisites
+    Create users
   </span>
   
 
@@ -300,7 +384,7 @@
         
   
   <span class="md-ellipsis">
-    Prerequisites
+    Create users
   </span>
   
 
@@ -320,18 +404,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#azure-free-account" class="md-nav__link">
+  <a href="#task-1-create-a-few-users" class="md-nav__link">
     <span class="md-ellipsis">
-      Azure free account
+      Task 1: Create a few users
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#pay-as-you-go" class="md-nav__link">
+  <a href="#task-2-create-a-security-group" class="md-nav__link">
     <span class="md-ellipsis">
-      Pay-as-you-go
+      Task 2: Create a security group
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#task-3-create-a-microsoft-365-group" class="md-nav__link">
+    <span class="md-ellipsis">
+      Task 3: Create a Microsoft 365 group
     </span>
   </a>
   
@@ -344,64 +437,6 @@
     </li>
   
 
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
-        
-          
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    Entra ID
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3">
-            <span class="md-nav__icon md-icon"></span>
-            Entra ID
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Entra%20ID/Create%20a%20new%20tenant/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Create a new tenant
-  </span>
-  
-
-      </a>
-    </li>
-  
-
               
             
               
@@ -411,28 +446,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Entra%20ID/Create%20users/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Create users
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Entra%20ID/Create%20groups/" class="md-nav__link">
+      <a href="../Create%20groups/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -453,7 +467,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Entra%20ID/Restore%20deleted%20users/" class="md-nav__link">
+      <a href="../Restore%20deleted%20users/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -474,7 +488,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Entra%20ID/Group-based%20licensing/" class="md-nav__link">
+      <a href="../Group-based%20licensing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -495,7 +509,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Entra%20ID/Invite%20guests/" class="md-nav__link">
+      <a href="../Invite%20guests/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -516,7 +530,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Entra%20ID/Add%20a%20custom%20domain/" class="md-nav__link">
+      <a href="../Add%20a%20custom%20domain/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -562,18 +576,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#azure-free-account" class="md-nav__link">
+  <a href="#task-1-create-a-few-users" class="md-nav__link">
     <span class="md-ellipsis">
-      Azure free account
+      Task 1: Create a few users
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#pay-as-you-go" class="md-nav__link">
+  <a href="#task-2-create-a-security-group" class="md-nav__link">
     <span class="md-ellipsis">
-      Pay-as-you-go
+      Task 2: Create a security group
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#task-3-create-a-microsoft-365-group" class="md-nav__link">
+    <span class="md-ellipsis">
+      Task 3: Create a Microsoft 365 group
     </span>
   </a>
   
@@ -594,27 +617,43 @@
                   
 
 
-  <h1>Prerequisites</h1>
+  <h1>Create users</h1>
 
-<p>หากใครยังไม่มี Azure subscription เอาไว้ทดลองเล่น ก็สามารถสมัคร free trial 200 USD 30 วันได้</p>
-<h2 id="azure-free-account">Azure free account</h2>
-<p>1. ไปที่ <a href="https://azure.microsoft.com/free/">https://azure.microsoft.com/free/</a></p>
-<p><a href="../assets/screenshots/0%20try%20azure%20for%20free.jpg"><img alt="alt text" src="../assets/screenshots/0%20try%20azure%20for%20free.jpg" /></a></p>
-<p>Sign in ด้วย account ที่เรามี หรือจะสร้าง account ใหม่เลยก็ได้</p>
-<p><a href="../assets/screenshots/0%20sign%20in.jpg"><img alt="alt text" src="../assets/screenshots/0%20sign%20in.jpg" /></a></p>
-<p>2. กรอกข้อมูลต่างๆ จนครบถ้วน แล้วใช้บัตรเครดิตของเรายืนยันตัวตน</p>
-<blockquote>
-<p>เราอาจจะเห็น 1 USD ถูก hold ไว้ชั่วคราวในบัตร แต่ระบบจะคืนให้ในที่สุด</p>
-</blockquote>
-<p><a href="../assets/screenshots/0%20credit%20card.jpg"><img alt="alt text" src="../assets/screenshots/0%20credit%20card.jpg" /></a></p>
-<blockquote>
-<p>ระบบจะไม่หักเงินจากบัตรเครดิต จนกว่าเราจะเปลี่ยนไปใช้ pay-as-you-go (PAYG)</p>
-<p><a href="../assets/screenshots/0%20why%20do%20we%20need%20a%20credit%20card.jpg"><img alt="alt text" src="../assets/screenshots/0%20why%20do%20we%20need%20a%20credit%20card.jpg" /></a></p>
-</blockquote>
-<h2 id="pay-as-you-go">Pay-as-you-go</h2>
-<p>หากระบบไม่ยอมให้เราใช้ free account แล้ว เราก็ใช้แบบ pay-as-you-go ไป ก็จะมีค่าใช้จ่ายนิดหน่อยนะครับ (เราทำ lab ไหน เสร็จแล้ว review สักพักนึง แล้วลบ resource เลย)</p>
-<p><a href="../assets/screenshots/0%20pay%20as%20you%20go.jpg"><img alt="alt text" src="../assets/screenshots/0%20pay%20as%20you%20go.jpg" /></a></p>
-<p>ถ้าตอนนี้เรามี Azure subscription แล้ว ก็มาเริ่มทดลองใช้กันได้เลยครับ</p>
+<p>ในหัวข้อนี้ เราจะสร้าง user และ group เพื่อใช้งาน</p>
+<h2 id="task-1-create-a-few-users">Task 1: Create a few users</h2>
+<p>1. สร้าง User1</p>
+<p><a href="../../assets/screenshots/1.1%20create%20a%20new%20user.jpg"><img alt="alt text" src="../../assets/screenshots/1.1%20create%20a%20new%20user.jpg" /></a></p>
+<p><a href="../../assets/screenshots/1.1%20user1.jpg"><img alt="alt text" src="../../assets/screenshots/1.1%20user1.jpg" /></a></p>
+<p>Department = IT</p>
+<p><a href="../../assets/screenshots/1.1%20user1%20department.jpg"><img alt="alt text" src="../../assets/screenshots/1.1%20user1%20department.jpg" /></a></p>
+<p>ไม่ assign role ใดๆ</p>
+<p><a href="../../assets/screenshots/1.1%20user1%20no%20role.jpg"><img alt="alt text" src="../../assets/screenshots/1.1%20user1%20no%20role.jpg" /></a></p>
+<p>แล้วกด Create</p>
+<p><a href="../../assets/screenshots/1.1%20user1%20create.jpg"><img alt="alt text" src="../../assets/screenshots/1.1%20user1%20create.jpg" /></a></p>
+<p>2. สร้าง User2</p>
+<p><a href="../../assets/screenshots/1.1%20create%20user2.jpg"><img alt="alt text" src="../../assets/screenshots/1.1%20create%20user2.jpg" /></a></p>
+<p>Department = HR</p>
+<p><a href="../../assets/screenshots/1.1%20user2%20department.jpg"><img alt="alt text" src="../../assets/screenshots/1.1%20user2%20department.jpg" /></a></p>
+<p>3. สร้าง User3</p>
+<p><a href="../../assets/screenshots/1.1%20create%20user3.jpg"><img alt="alt text" src="../../assets/screenshots/1.1%20create%20user3.jpg" /></a></p>
+<p>Department = HR</p>
+<p><a href="../../assets/screenshots/1.1%20user3%20department.jpg"><img alt="alt text" src="../../assets/screenshots/1.1%20user3%20department.jpg" /></a></p>
+<p>4. ตรวจสอบว่า user ใหม่ทั้ง 3 accounts ถูกสร้างแล้ว</p>
+<p><a href="../../assets/screenshots/1.1%20click%20users%20to%20review.jpg"><img alt="alt text" src="../../assets/screenshots/1.1%20click%20users%20to%20review.jpg" /></a></p>
+<p><a href="../../assets/screenshots/1.1%20review%20new%20users%20are%20created.jpg"><img alt="alt text" src="../../assets/screenshots/1.1%20review%20new%20users%20are%20created.jpg" /></a></p>
+<h2 id="task-2-create-a-security-group">Task 2: Create a security group</h2>
+<p>1. สร้าง security group</p>
+<p><a href="../../assets/screenshots/1.1%20create%20a%20new%20group.jpg"><img alt="alt text" src="../../assets/screenshots/1.1%20create%20a%20new%20group.jpg" /></a></p>
+<p>และเพิ่ม user1 เข้าไปเป็นสมาชิก</p>
+<p><a href="../../assets/screenshots/1.1%20security%20group%20g%20it%20and%20add%20user1.jpg"><img alt="alt text" src="../../assets/screenshots/1.1%20security%20group%20g%20it%20and%20add%20user1.jpg" /></a></p>
+<h2 id="task-3-create-a-microsoft-365-group">Task 3: Create a Microsoft 365 group</h2>
+<p>1. สร้าง Microsoft 365 group</p>
+<p><a href="../../assets/screenshots/1.1%20microsoft%20365%20g%20it%20365%20and%20add%20user1.jpg"><img alt="alt text" src="../../assets/screenshots/1.1%20microsoft%20365%20g%20it%20365%20and%20add%20user1.jpg" /></a></p>
+<p>และเพิ่ม user1 เข้าไปเป็นสมาชิก</p>
+<p><a href="../../assets/screenshots/1.1%20microsoft%20365%20g%20it%20365%20and%20add%20user1%202.jpg"><img alt="alt text" src="../../assets/screenshots/1.1%20microsoft%20365%20g%20it%20365%20and%20add%20user1%202.jpg" /></a></p>
+<p>2. ตรวจสอบว่าทั้ง 2 groups ถูกสร้างแล้ว</p>
+<p><a href="../../assets/screenshots/1.1%20review%20groups.jpg"><img alt="alt text" src="../../assets/screenshots/1.1%20review%20groups.jpg" /></a></p>
+<p><a href="../../assets/screenshots/1.1%202%20groups%20are%20created.jpg"><img alt="alt text" src="../../assets/screenshots/1.1%202%20groups%20are%20created.jpg" /></a></p>
 <p>...</p>
 <p><a href="https://learninthecloud.co">Learn In the Cloud</a></p>
 
@@ -669,10 +708,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.path", "navigation.top"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.path", "navigation.top"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.081f42fc.min.js"></script>
+      <script src="../../assets/javascripts/bundle.081f42fc.min.js"></script>
       
     
   </body>
