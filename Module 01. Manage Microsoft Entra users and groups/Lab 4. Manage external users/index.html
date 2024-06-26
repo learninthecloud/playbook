@@ -8,23 +8,25 @@
       
       
       
-        <link rel="canonical" href="https://learninthecloud/az-104/AZ-104/Module%2001.%20Manage%20Microsoft%20Entra%20users%20and%20groups/Lab%206.%20Add%20a%20custom%20domain%20to%20Entra%20ID%20tenant/">
+        <link rel="canonical" href="https://learninthecloud/az-104/Module%2001.%20Manage%20Microsoft%20Entra%20users%20and%20groups/Lab%204.%20Manage%20external%20users/">
       
       
-        <link rel="prev" href="../Lab%205.%20Configure%20self-service%20password%20reset%20%28SSPR%29/">
+        <link rel="prev" href="../Lab%203.%20Manage%20licenses%20in%20Microsoft%20Entra%20ID/">
       
       
+        <link rel="next" href="../Lab%205.%20Configure%20self-service%20password%20reset%20%28SSPR%29/">
       
-      <link rel="icon" href="../../../assets/images/favicon.png">
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.24">
     
     
       
-        <title>Lab 6. Add a custom domain to Entra ID tenant - AZ-104: Microsoft Azure Administrator Playbook</title>
+        <title>Lab 4. Manage external users - AZ-104: Microsoft Azure Administrator Playbook</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.6543a935.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6543a935.min.css">
       
       
 
@@ -43,9 +45,9 @@
       
     
     
-      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -64,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#task-1-buy-a-domain" class="md-skip">
+        <a href="#task-1-sign-in-as-a-user" class="md-skip">
           Skip to content
         </a>
       
@@ -80,7 +82,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../.." title="AZ-104: Microsoft Azure Administrator Playbook" class="md-header__button md-logo" aria-label="AZ-104: Microsoft Azure Administrator Playbook" data-md-component="logo">
+    <a href="../.." title="AZ-104: Microsoft Azure Administrator Playbook" class="md-header__button md-logo" aria-label="AZ-104: Microsoft Azure Administrator Playbook" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -100,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Lab 6. Add a custom domain to Entra ID tenant
+              Lab 4. Manage external users
             
           </span>
         </div>
@@ -175,7 +177,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="AZ-104: Microsoft Azure Administrator Playbook" class="md-nav__button md-logo" aria-label="AZ-104: Microsoft Azure Administrator Playbook" data-md-component="logo">
+    <a href="../.." title="AZ-104: Microsoft Azure Administrator Playbook" class="md-nav__button md-logo" aria-label="AZ-104: Microsoft Azure Administrator Playbook" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -193,7 +195,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -213,7 +215,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Prerequisites/" class="md-nav__link">
+      <a href="../../Prerequisites/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -249,7 +251,7 @@
             
   
   <span class="md-ellipsis">
-    AZ 104
+    Module 01. Manage Microsoft Entra users and groups
   </span>
   
 
@@ -258,43 +260,6 @@
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
-            <span class="md-nav__icon md-icon"></span>
-            AZ 104
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" checked>
-        
-          
-          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    Module 01. Manage Microsoft Entra users and groups
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_3_1">
             <span class="md-nav__icon md-icon"></span>
             Module 01. Manage Microsoft Entra users and groups
           </label>
@@ -388,10 +353,28 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../Lab%204.%20Manage%20external%20users/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Lab 4. Manage external users
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -400,6 +383,69 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#task-1-sign-in-as-a-user" class="md-nav__link">
+    <span class="md-ellipsis">
+      Task 1: Sign in as a user
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#task-2-invite-external-users" class="md-nav__link">
+    <span class="md-ellipsis">
+      Task 2: Invite external users
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#task-3-verify-the-results" class="md-nav__link">
+    <span class="md-ellipsis">
+      Task 3: Verify the results
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#task-4-accept-invitaions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Task 4: Accept invitaions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#task-5-verify-the-results" class="md-nav__link">
+    <span class="md-ellipsis">
+      Task 5: Verify the results
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -430,28 +476,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Lab 6. Add a custom domain to Entra ID tenant
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../Lab%206.%20Add%20a%20custom%20domain%20to%20Entra%20ID%20tenant/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -460,68 +488,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#task-1-buy-a-domain" class="md-nav__link">
-    <span class="md-ellipsis">
-      Task 1: Buy a domain
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#task-2-add-a-custom-domain" class="md-nav__link">
-    <span class="md-ellipsis">
-      Task 2: Add a custom domain
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#task-3-change-users-upn-suffixes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Task 3: Change users' UPN suffixes
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#task-4-testing" class="md-nav__link">
-    <span class="md-ellipsis">
-      Task 4: Testing
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -559,36 +525,45 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#task-1-buy-a-domain" class="md-nav__link">
+  <a href="#task-1-sign-in-as-a-user" class="md-nav__link">
     <span class="md-ellipsis">
-      Task 1: Buy a domain
+      Task 1: Sign in as a user
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#task-2-add-a-custom-domain" class="md-nav__link">
+  <a href="#task-2-invite-external-users" class="md-nav__link">
     <span class="md-ellipsis">
-      Task 2: Add a custom domain
+      Task 2: Invite external users
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#task-3-change-users-upn-suffixes" class="md-nav__link">
+  <a href="#task-3-verify-the-results" class="md-nav__link">
     <span class="md-ellipsis">
-      Task 3: Change users' UPN suffixes
+      Task 3: Verify the results
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#task-4-testing" class="md-nav__link">
+  <a href="#task-4-accept-invitaions" class="md-nav__link">
     <span class="md-ellipsis">
-      Task 4: Testing
+      Task 4: Accept invitaions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#task-5-verify-the-results" class="md-nav__link">
+    <span class="md-ellipsis">
+      Task 5: Verify the results
     </span>
   </a>
   
@@ -609,56 +584,58 @@
                   
 
 
-  <h1>Lab 6. Add a custom domain to Entra ID tenant</h1>
+  <h1>Lab 4. Manage external users</h1>
 
-<p>จริงๆ แล้ว ในการทดลองใช้งาน Entra ID เราใช้แค่ชื่อ default tenant "your-tenant-name.onmicrosoft.com" ก็เพียงพอแล้ว</p>
-<p>แต่ถ้าเราอยากลองทำให้เหมือนจริง ก็อาจจะลองเพิ่ม custom domain เข้ามาใน Entra ID tenant ของเราได้</p>
-<p>จากนั้นก็ให้ user ใช้ username@domain.xxx แทน username@your-tenant-name.onmicrosoft.com ได้เลยครับ</p>
-<h2 id="task-1-buy-a-domain">Task 1: Buy a domain</h2>
-<p>1. ซื้อ domain ราคาถูก จากที่ไหนก็ได้</p>
-<p>เลือกแค่ 1 ปี</p>
-<p><a href="../../assets/screenshots/1.6.1%20buy%20the%20domain.jpg"><img alt="alt text" src="../../assets/screenshots/1.6.1%20buy%20the%20domain.jpg" /></a></p>
-<p>ปิดทุก option ที่จะทำให้เราเสียเงินเพิ่ม</p>
-<p><a href="../../assets/screenshots/1.6.2%20reduce%20cost.jpg"><img alt="alt text" src="../../assets/screenshots/1.6.2%20reduce%20cost.jpg" /></a></p>
-<p>แล้วกดซื้อ</p>
-<p><a href="../../assets/screenshots/1.6.3%20complete%20purchase.jpg"><img alt="alt text" src="../../assets/screenshots/1.6.3%20complete%20purchase.jpg" /></a></p>
-<p>ตอนนี้เราได้ domain ที่จะนำไปเพิ่มลงใน tenant ของเราแล้ว</p>
-<p><a href="../../assets/screenshots/1.6.4%20complete%20purchase%202.jpg"><img alt="alt text" src="../../assets/screenshots/1.6.4%20complete%20purchase%202.jpg" /></a></p>
-<p>2. อย่าลืมเข้ามาปิด auto renew ด้วยนะครับ</p>
-<p><a href="../../assets/screenshots/1.6.5%20turn%20off%20auto%20renew.jpg"><img alt="alt text" src="../../assets/screenshots/1.6.5%20turn%20off%20auto%20renew.jpg" /></a></p>
-<h2 id="task-2-add-a-custom-domain">Task 2: Add a custom domain</h2>
-<p>1. ใน Azure portal เลือก Add custom domain</p>
-<p><a href="../../assets/screenshots/1.6.6%20add%20a%20custom%20domain.jpg"><img alt="alt text" src="../../assets/screenshots/1.6.6%20add%20a%20custom%20domain.jpg" /></a></p>
-<p>copy ข้อมูล txt record ที่ระบบ generate ให้</p>
-<p><a href="../../assets/screenshots/1.6.7%20txt%20record%20info.jpg"><img alt="alt text" src="../../assets/screenshots/1.6.7%20txt%20record%20info.jpg" /></a></p>
-<p>2. แล้วนำข้อมูล TXT record ไปสร้างใน DNS zone ที่เราพึ่งจดทะเบียนไป</p>
-<p><a href="../../assets/screenshots/1.6.9%20add%20txt%20record%20to%20dns.jpg"><img alt="alt text" src="../../assets/screenshots/1.6.9%20add%20txt%20record%20to%20dns.jpg" /></a></p>
-<p>3. จากนั้นกลับไปที่ Azure portal เพื่อ verify domain</p>
-<p>รอสักครู่ แล้วค่อยกด verify หรืออาจลองกด verify หลายๆ ครั้งหน่อย จนสำเร็จ</p>
-<p><a href="../../assets/screenshots/1.6.10%20verify%20domain.jpg"><img alt="alt text" src="../../assets/screenshots/1.6.10%20verify%20domain.jpg" /></a></p>
-<p>4. เลือก domain ใหม่</p>
-<p><a href="../../assets/screenshots/1.6.11%20select%20new%20domain.jpg"><img alt="alt text" src="../../assets/screenshots/1.6.11%20select%20new%20domain.jpg" /></a></p>
-<p>แล้วแล้ว Make primary</p>
-<p><a href="../../assets/screenshots/1.6.12%20make%20primary.jpg"><img alt="alt text" src="../../assets/screenshots/1.6.12%20make%20primary.jpg" /></a></p>
-<p>ตอนนี้ domain ใหม่เป็น primary domain แล้ว</p>
-<p><a href="../../assets/screenshots/1.6.13%20verify%20the%20new%20domain%20is%20primary.jpg"><img alt="alt text" src="../../assets/screenshots/1.6.13%20verify%20the%20new%20domain%20is%20primary.jpg" /></a></p>
-<h2 id="task-3-change-users-upn-suffixes">Task 3: Change users' UPN suffixes</h2>
-<p>1. เปลี่ยน UPN suffix ของ user1</p>
-<p><a href="../../assets/screenshots/1.6.14%20user1%20properties.jpg"><img alt="alt text" src="../../assets/screenshots/1.6.14%20user1%20properties.jpg" /></a></p>
-<p>เลือก domain ใหม่ที่พึ่งเพิ่มเข้ามา</p>
-<p><a href="../../assets/screenshots/1.6.15%20change%20upn%20user1.jpg"><img alt="alt text" src="../../assets/screenshots/1.6.15%20change%20upn%20user1.jpg" /></a></p>
-<p><a href="../../assets/screenshots/1.6.15%20user1%20changed.jpg"><img alt="alt text" src="../../assets/screenshots/1.6.15%20user1%20changed.jpg" /></a></p>
-<p>2. เปลี่ยน UPN suffix ของ user2 และ user3</p>
-<p><a href="../../assets/screenshots/1.6.16%203%20users%20changed.jpg"><img alt="alt text" src="../../assets/screenshots/1.6.16%203%20users%20changed.jpg" /></a></p>
-<h2 id="task-4-testing">Task 4: Testing</h2>
-<p>1. ลอง sign in ด้วย UPN เดิม เช่น user1@your-tenant-name.onmicrosoft.com</p>
-<p>เราจะ sign in ไม่ได้</p>
-<p><a href="../../assets/screenshots/1.6.17%20test%20the%20old%20upn.jpg"><img alt="alt text" src="../../assets/screenshots/1.6.17%20test%20the%20old%20upn.jpg" /></a></p>
-<p>2. ลอง sign in อีกครั้งด้วย UPN ใหม่ user1@domain.xxx</p>
-<p><a href="../../assets/screenshots/1.6.18%20sign%20in%20with%20the%20new%20upn.jpg"><img alt="alt text" src="../../assets/screenshots/1.6.18%20sign%20in%20with%20the%20new%20upn.jpg" /></a></p>
-<p><a href="../../assets/screenshots/1.6.19%20password.jpg"><img alt="alt text" src="../../assets/screenshots/1.6.19%20password.jpg" /></a></p>
-<p>ตอนนี้ user สามารถ sign in ด้วย UPN ใหม่ได้แล้ว</p>
-<p><a href="../../assets/screenshots/1.6.20%20verify%20signed%20in.jpg"><img alt="alt text" src="../../assets/screenshots/1.6.20%20verify%20signed%20in.jpg" /></a></p>
+<p>ใน lab นี้ เรามา invite บุคคลภายนอก ให้มี account ของเขาปรากฏใน tenant ของเราบ้าง</p>
+<p>ซึ่ง password ของเขาจะถูกบริหารจัดการใน domain หรือ tenant ของเขา (ไม่ใช่ใน tenant เรา)</p>
+<h2 id="task-1-sign-in-as-a-user">Task 1: Sign in as a user</h2>
+<p>1. เราอาจจะจำ password ของ user1 ไม่ได้ ดังนั้นเราอาจจะ reset password ของ user1 เลย</p>
+<p><a href="../../assets/screenshots/1.4.1%20reset%20user1%20password.jpg"><img alt="alt text" src="../../assets/screenshots/1.4.1%20reset%20user1%20password.jpg" /></a></p>
+<p>2. Sign in ใหม่ด้วย user1</p>
+<p><a href="../../assets/screenshots/1.4.2%20sign%20in%20as%20user1.jpg"><img alt="alt text" src="../../assets/screenshots/1.4.2%20sign%20in%20as%20user1.jpg" /></a></p>
+<h2 id="task-2-invite-external-users">Task 2: Invite external users</h2>
+<p>1. ให้ user1 ลอง invite external user ดู</p>
+<p><a href="../../assets/screenshots/1.4.3%20invite%20an%20external%20user.jpg"><img alt="alt text" src="../../assets/screenshots/1.4.3%20invite%20an%20external%20user.jpg" /></a></p>
+<p>ให้เรา invite ใครก็ได้ที่ไม่ได้อยู่ใน tenant เดียวกับเรา</p>
+<p><a href="../../assets/screenshots/1.4.4%20invite%20an%20external%20user%202.jpg"><img alt="alt text" src="../../assets/screenshots/1.4.4%20invite%20an%20external%20user%202.jpg" /></a></p>
+<p>user type = guest</p>
+<p><a href="../../assets/screenshots/1.4.5%20invite%20an%20external%20user%203.jpg"><img alt="alt text" src="../../assets/screenshots/1.4.5%20invite%20an%20external%20user%203.jpg" /></a></p>
+<p>ไม่ assign role ใดๆ ให้เขา</p>
+<p><a href="../../assets/screenshots/1.4.6%20invite%20an%20external%20user%204.jpg"><img alt="alt text" src="../../assets/screenshots/1.4.6%20invite%20an%20external%20user%204.jpg" /></a></p>
+<p>แล้ว invite</p>
+<p><a href="../../assets/screenshots/1.4.7%20invite%20an%20external%20user%205.jpg"><img alt="alt text" src="../../assets/screenshots/1.4.7%20invite%20an%20external%20user%205.jpg" /></a></p>
+<p>2. invite external user คนที่ 2</p>
+<p><a href="../../assets/screenshots/1.4.8%20invite%20an%20external%20user%206.jpg"><img alt="alt text" src="../../assets/screenshots/1.4.8%20invite%20an%20external%20user%206.jpg" /></a></p>
+<p><a href="../../assets/screenshots/1.4.9%20invite%20an%20external%20user%207.jpg"><img alt="alt text" src="../../assets/screenshots/1.4.9%20invite%20an%20external%20user%207.jpg" /></a></p>
+<h2 id="task-3-verify-the-results">Task 3: Verify the results</h2>
+<p>1. ตอนนี้ user1 ได้ Invite external users เข้ามาที่ tenant ของเราแล้ว 2 คน</p>
+<p><a href="../../assets/screenshots/1.4.10%202%20external%20users.jpg"><img alt="alt text" src="../../assets/screenshots/1.4.10%202%20external%20users.jpg" /></a></p>
+<p>2. แต่ external user ที่ invite ไปยังไม่ได้ accept invitation (process จึงยังไม่เรียบร้อย)</p>
+<p><a href="../../assets/screenshots/1.4.11%20external%20user%201.jpg"><img alt="alt text" src="../../assets/screenshots/1.4.11%20external%20user%201.jpg" /></a></p>
+<p><a href="../../assets/screenshots/1.4.12%20external%20user%202.jpg"><img alt="alt text" src="../../assets/screenshots/1.4.12%20external%20user%202.jpg" /></a></p>
+<h2 id="task-4-accept-invitaions">Task 4: Accept invitaions</h2>
+<p>1. ที่ mailbox ของ external user คนที่ 1</p>
+<p>Accept invitation</p>
+<p><a href="../../assets/screenshots/1.4.13%20external%20user%201%20accept.jpg"><img alt="alt text" src="../../assets/screenshots/1.4.13%20external%20user%201%20accept.jpg" /></a></p>
+<p><a href="../../assets/screenshots/1.4.14%20external%20user%201%20accept%202.jpg"><img alt="alt text" src="../../assets/screenshots/1.4.14%20external%20user%201%20accept%202.jpg" /></a></p>
+<p><a href="../../assets/screenshots/1.4.15%20external%20user1%20accept%203.jpg"><img alt="alt text" src="../../assets/screenshots/1.4.15%20external%20user1%20accept%203.jpg" /></a></p>
+<p><a href="../../assets/screenshots/1.4.16%20external%20user1%20accept%204.jpg"><img alt="alt text" src="../../assets/screenshots/1.4.16%20external%20user1%20accept%204.jpg" /></a></p>
+<p>Accept permission requests</p>
+<p><a href="../../assets/screenshots/1.4.17%20external%20user1%20accept%205.jpg"><img alt="alt text" src="../../assets/screenshots/1.4.17%20external%20user1%20accept%205.jpg" /></a></p>
+<p>ตอนนี้ external user คนที่ 1 sign in เข้า tenant ของเราสำเร็จแล้ว</p>
+<p><a href="../../assets/screenshots/1.4.18%20external%20user1%20accept%206.jpg"><img alt="alt text" src="../../assets/screenshots/1.4.18%20external%20user1%20accept%206.jpg" /></a></p>
+<p>2. External user คนที่ 2 accept invitation</p>
+<p><a href="../../assets/screenshots/1.4.19%20external%20user2%20accept%201.jpg"><img alt="alt text" src="../../assets/screenshots/1.4.19%20external%20user2%20accept%201.jpg" /></a></p>
+<p><a href="../../assets/screenshots/1.4.20%20external%20user2%20accept%202.jpg"><img alt="alt text" src="../../assets/screenshots/1.4.20%20external%20user2%20accept%202.jpg" /></a></p>
+<p>External user คนที่ 2 ก็ sign in เข้า tenant ของเราสำเร็จแล้ว</p>
+<p><a href="../../assets/screenshots/1.4.21%20external%20user2%20accept%203.jpg"><img alt="alt text" src="../../assets/screenshots/1.4.21%20external%20user2%20accept%203.jpg" /></a></p>
+<h2 id="task-5-verify-the-results">Task 5: Verify the results</h2>
+<p>1. ตอนนี้ external user ทั้ง 2 คน accept invitation แล้ว</p>
+<p><a href="../../assets/screenshots/1.4.22%20review%20external%20user1.jpg"><img alt="alt text" src="../../assets/screenshots/1.4.22%20review%20external%20user1.jpg" /></a></p>
+<p><a href="../../assets/screenshots/1.4.23%20review%20external%20user2.jpg"><img alt="alt text" src="../../assets/screenshots/1.4.23%20review%20external%20user2.jpg" /></a></p>
+<p>2. ลองนำ external user ไปใช้งาน</p>
+<p>เช่น ลอง add external user เข้า G IT group ดู</p>
+<p><a href="../../assets/screenshots/1.4.24%20add%20external%20user1%20to%20a%20group.jpg"><img alt="alt text" src="../../assets/screenshots/1.4.24%20add%20external%20user1%20to%20a%20group.jpg" /></a></p>
 <p>...</p>
 <p><a href="https://learninthecloud.co">Learn In the Cloud</a></p>
 
@@ -707,10 +684,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.081f42fc.min.js"></script>
+      <script src="../../assets/javascripts/bundle.081f42fc.min.js"></script>
       
     
   </body>
