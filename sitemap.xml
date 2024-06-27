@@ -2,52 +2,52 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://learninthecloud/azure-playbook/</loc>
-         <lastmod>2024-06-26</lastmod>
+         <lastmod>2024-06-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://learninthecloud/azure-playbook/Prerequisites/</loc>
-         <lastmod>2024-06-26</lastmod>
+         <lastmod>2024-06-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://learninthecloud/azure-playbook/Entra%20ID/Add%20a%20custom%20domain/</loc>
-         <lastmod>2024-06-26</lastmod>
+         <lastmod>2024-06-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://learninthecloud/azure-playbook/Entra%20ID/Create%20a%20new%20tenant/</loc>
-         <lastmod>2024-06-26</lastmod>
+         <lastmod>2024-06-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://learninthecloud/azure-playbook/Entra%20ID/Create%20groups/</loc>
-         <lastmod>2024-06-26</lastmod>
+         <lastmod>2024-06-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://learninthecloud/azure-playbook/Entra%20ID/Create%20users/</loc>
-         <lastmod>2024-06-26</lastmod>
+         <lastmod>2024-06-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://learninthecloud/azure-playbook/Entra%20ID/Group-based%20licensing%20with%20a%20dynamic%20user%20group/</loc>
-         <lastmod>2024-06-26</lastmod>
+         <lastmod>2024-06-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://learninthecloud/azure-playbook/Entra%20ID/Invite%20guests/</loc>
-         <lastmod>2024-06-26</lastmod>
+         <lastmod>2024-06-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://learninthecloud/azure-playbook/Entra%20ID/Restore%20deleted%20users/</loc>
-         <lastmod>2024-06-26</lastmod>
+         <lastmod>2024-06-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://learninthecloud/azure-playbook/Entra%20ID/SSPR/</loc>
-         <lastmod>2024-06-26</lastmod>
+         <lastmod>2024-06-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
