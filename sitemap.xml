@@ -56,6 +56,16 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://learninthecloud/azure-playbook/Virtual%20Machines%20%28VMs%29/Availability%20Sets/</loc>
+         <lastmod>2024-08-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learninthecloud/azure-playbook/Virtual%20Machines%20%28VMs%29/Azure%20Disk%20Encryption%20%28ADE%29/</loc>
+         <lastmod>2024-08-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://learninthecloud/azure-playbook/Virtual%20Machines%20%28VMs%29/Change%20VM%20size/</loc>
          <lastmod>2024-08-10</lastmod>
          <changefreq>daily</changefreq>
@@ -66,17 +76,7 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://learninthecloud/azure-playbook/Virtual%20Machines%20%28VMs%29/Configure%20Azure%20Disk%20Encryption%20%28ADE%29/</loc>
-         <lastmod>2024-08-10</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://learninthecloud/azure-playbook/Virtual%20Machines%20%28VMs%29/Create%20a%20VM/</loc>
-         <lastmod>2024-08-10</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://learninthecloud/azure-playbook/Virtual%20Machines%20%28VMs%29/Deploy%20VMs%20in%20availability%20sets/</loc>
          <lastmod>2024-08-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
